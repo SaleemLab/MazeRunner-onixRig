@@ -19,7 +19,7 @@
     <Nodes>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="spk:SpinnakerCapture">
-          <spk:Index>0</spk:Index>
+          <spk:Index>1</spk:Index>
           <spk:ColorProcessing>Default</spk:ColorProcessing>
         </Combinator>
       </Expression>
@@ -327,7 +327,7 @@
               <Selector>Y</Selector>
             </Expression>
             <Expression xsi:type="Combinator">
-              <Combinator xsi:type="rx:CombineLatest" />
+              <Combinator xsi:type="rx:Zip" />
             </Expression>
             <Expression xsi:type="WorkflowOutput" />
           </Nodes>
@@ -1939,7 +1939,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260624\M260XX_Track1RUN1_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260714\M260XX_Track1RUN1_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2021,6 +2021,9 @@
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="rx:Accumulate" />
+                  <Expression xsi:type="rx:BehaviorSubject">
+                    <Name>Reward Count</Name>
+                  </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="wie:KeyDown">
                       <wie:Filter>M</wie:Filter>
@@ -2115,26 +2118,27 @@
                   <Edge From="23" To="24" Label="Source1" />
                   <Edge From="25" To="26" Label="Source1" />
                   <Edge From="26" To="27" Label="Source1" />
-                  <Edge From="28" To="29" Label="Source1" />
+                  <Edge From="27" To="28" Label="Source1" />
                   <Edge From="29" To="30" Label="Source1" />
-                  <Edge From="30" To="34" Label="Source1" />
-                  <Edge From="30" To="38" Label="Source1" />
-                  <Edge From="30" To="41" Label="Source1" />
-                  <Edge From="31" To="32" Label="Source1" />
+                  <Edge From="30" To="31" Label="Source1" />
+                  <Edge From="31" To="35" Label="Source1" />
+                  <Edge From="31" To="39" Label="Source1" />
+                  <Edge From="31" To="42" Label="Source1" />
                   <Edge From="32" To="33" Label="Source1" />
-                  <Edge From="33" To="34" Label="Source2" />
-                  <Edge From="34" To="35" Label="Source1" />
-                  <Edge From="34" To="36" Label="Source1" />
-                  <Edge From="35" To="43" Label="Source1" />
-                  <Edge From="36" To="43" Label="Source2" />
-                  <Edge From="37" To="38" Label="Source2" />
-                  <Edge From="38" To="39" Label="Source1" />
-                  <Edge From="39" To="43" Label="Source3" />
-                  <Edge From="40" To="41" Label="Source2" />
-                  <Edge From="41" To="42" Label="Source1" />
-                  <Edge From="42" To="43" Label="Source4" />
-                  <Edge From="43" To="44" Label="Source1" />
+                  <Edge From="33" To="34" Label="Source1" />
+                  <Edge From="34" To="35" Label="Source2" />
+                  <Edge From="35" To="36" Label="Source1" />
+                  <Edge From="35" To="37" Label="Source1" />
+                  <Edge From="36" To="44" Label="Source1" />
+                  <Edge From="37" To="44" Label="Source2" />
+                  <Edge From="38" To="39" Label="Source2" />
+                  <Edge From="39" To="40" Label="Source1" />
+                  <Edge From="40" To="44" Label="Source3" />
+                  <Edge From="41" To="42" Label="Source2" />
+                  <Edge From="42" To="43" Label="Source1" />
+                  <Edge From="43" To="44" Label="Source4" />
                   <Edge From="44" To="45" Label="Source1" />
+                  <Edge From="45" To="46" Label="Source1" />
                 </Edges>
               </Workflow>
             </Expression>
@@ -2475,7 +2479,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260624\M260XX_Track1RUN1_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260714\M260XX_Track1RUN1_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2513,8 +2517,20 @@ def generate():
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="rx:Zip" />
                   </Expression>
+                  <Expression xsi:type="SubscribeSubject">
+                    <Name>Device Events</Name>
+                  </Expression>
+                  <Expression xsi:type="beh:Parse">
+                    <harp:Register xsi:type="beh:TimestampedCamera0Frame" />
+                  </Expression>
+                  <Expression xsi:type="MemberSelector">
+                    <Selector>Seconds</Selector>
+                  </Expression>
+                  <Expression xsi:type="Combinator">
+                    <Combinator xsi:type="rx:WithLatestFrom" />
+                  </Expression>
                   <Expression xsi:type="scr:ExpressionTransform">
-                    <scr:Expression>new(Item1 as HarpTimestamp, Item2 as CameraFrame, Item3.Item1 as XPosition, Item3.Item2 as YPosition, Item4 as AsyncPulse, Item5 as MobilityPixelChange, Item6 as InZone1, Item7 as InZone2)</scr:Expression>
+                    <scr:Expression>new(Item2 as HarpTimestamp, Item1.Item2 as CameraFrame, Item1.Item3.Item1 as XPosition, Item1.Item3.Item2 as YPosition, Item1.Item4 as AsyncPulse, Item1.Item5 as MobilityPixelChange, Item1.Item6 as InZone1, Item1.Item7 as InZone2)</scr:Expression>
                   </Expression>
                   <Expression xsi:type="rx:PublishSubject">
                     <Name>BehaviourLog</Name>
@@ -2535,8 +2551,12 @@ def generate():
                   <Edge From="12" To="15" Label="Source6" />
                   <Edge From="13" To="15" Label="Source7" />
                   <Edge From="14" To="15" Label="Source8" />
-                  <Edge From="15" To="16" Label="Source1" />
+                  <Edge From="15" To="19" Label="Source1" />
                   <Edge From="16" To="17" Label="Source1" />
+                  <Edge From="17" To="18" Label="Source1" />
+                  <Edge From="18" To="19" Label="Source2" />
+                  <Edge From="19" To="20" Label="Source1" />
+                  <Edge From="20" To="21" Label="Source1" />
                 </Edges>
               </Workflow>
             </Expression>
@@ -2646,7 +2666,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260624\M260XX_Track1RUN1_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M260XX\20260714\M260XX_Track1RUN1_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
