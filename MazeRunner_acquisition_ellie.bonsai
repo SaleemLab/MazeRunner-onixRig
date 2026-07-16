@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.9.0"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:p1="clr-namespace:OpenEphys.Sockets.Bonsai;assembly=OpenEphys.Sockets.Bonsai"
+                 xmlns:onix1="clr-namespace:OpenEphys.Onix1;assembly=OpenEphys.Onix1"
+                 xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
+                 xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
+                 xmlns:dsp="clr-namespace:Bonsai.Dsp;assembly=Bonsai.Dsp"
+                 xmlns:p2="clr-namespace:Bonsai.Ephys.Design;assembly=Bonsai.Ephys.Design"
+                 xmlns:gl="clr-namespace:Bonsai.Shaders;assembly=Bonsai.Shaders"
+                 xmlns:scr="clr-namespace:Bonsai.Scripting.Expressions;assembly=Bonsai.Scripting.Expressions"
+                 xmlns="https://bonsai-rx.org/2018/workflow">
+  <Workflow>
+    <Nodes>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="p1:TcpServer">
+            <p1:Name>OpenEphysGUI</p1:Name>
+            <p1:Port>9001</p1:Port>
+            <p1:Address>localhost</p1:Address>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:CreateContext">
+          <onix1:Driver>riffa</onix1:Driver>
+          <onix1:Index>0</onix1:Index>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:ConfigureLoadTester">
+          <onix1:DeviceName>Load Tester</onix1:DeviceName>
+          <onix1:DeviceAddress>11</onix1:DeviceAddress>
+          <onix1:Enable>true</onix1:Enable>
+          <onix1:ReceivedWords>392</onix1:ReceivedWords>
+          <onix1:TransmittedWords>100</onix1:TransmittedWords>
+          <onix1:FramesPerSecond>30000</onix1:FramesPerSecond>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:ConfigureBreakoutBoard">
+          <onix1:Name>BreakoutBoard</onix1:Name>
+          <onix1:Heartbeat>
+            <onix1:DeviceName>BreakoutBoard/PersistentHeartbeat</onix1:DeviceName>
+            <onix1:DeviceAddress>0</onix1:DeviceAddress>
+            <onix1:BeatsPerSecond>100</onix1:BeatsPerSecond>
+          </onix1:Heartbeat>
+          <onix1:AnalogIO>
+            <onix1:DeviceName>BreakoutBoard/AnalogIO</onix1:DeviceName>
+            <onix1:DeviceAddress>6</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:InputRange0>TenVolts</onix1:InputRange0>
+            <onix1:InputRange1>TenVolts</onix1:InputRange1>
+            <onix1:InputRange2>TenVolts</onix1:InputRange2>
+            <onix1:InputRange3>TenVolts</onix1:InputRange3>
+            <onix1:InputRange4>TenVolts</onix1:InputRange4>
+            <onix1:InputRange5>TenVolts</onix1:InputRange5>
+            <onix1:InputRange6>TenVolts</onix1:InputRange6>
+            <onix1:InputRange7>TenVolts</onix1:InputRange7>
+            <onix1:InputRange8>TenVolts</onix1:InputRange8>
+            <onix1:InputRange9>TenVolts</onix1:InputRange9>
+            <onix1:InputRange10>TenVolts</onix1:InputRange10>
+            <onix1:InputRange11>TenVolts</onix1:InputRange11>
+            <onix1:Direction0>Input</onix1:Direction0>
+            <onix1:Direction1>Input</onix1:Direction1>
+            <onix1:Direction2>Input</onix1:Direction2>
+            <onix1:Direction3>Input</onix1:Direction3>
+            <onix1:Direction4>Input</onix1:Direction4>
+            <onix1:Direction5>Input</onix1:Direction5>
+            <onix1:Direction6>Input</onix1:Direction6>
+            <onix1:Direction7>Input</onix1:Direction7>
+            <onix1:Direction8>Input</onix1:Direction8>
+            <onix1:Direction9>Input</onix1:Direction9>
+            <onix1:Direction10>Input</onix1:Direction10>
+            <onix1:Direction11>Input</onix1:Direction11>
+          </onix1:AnalogIO>
+          <onix1:DigitalIO>
+            <onix1:DeviceName>BreakoutBoard/DigitalIO</onix1:DeviceName>
+            <onix1:DeviceAddress>7</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:DeadTime>0</onix1:DeadTime>
+            <onix1:SampleRate xsi:nil="true" />
+          </onix1:DigitalIO>
+          <onix1:ClockOutput>
+            <onix1:DeviceName>BreakoutBoard/OutputClock</onix1:DeviceName>
+            <onix1:DeviceAddress>5</onix1:DeviceAddress>
+            <onix1:ClockGate>false</onix1:ClockGate>
+            <onix1:Frequency>1000000</onix1:Frequency>
+            <onix1:DutyCycle>50</onix1:DutyCycle>
+            <onix1:Delay>0</onix1:Delay>
+          </onix1:ClockOutput>
+          <onix1:HarpInput>
+            <onix1:DeviceName>BreakoutBoard/HarpSyncInput</onix1:DeviceName>
+            <onix1:DeviceAddress>12</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:Source>Breakout</onix1:Source>
+          </onix1:HarpInput>
+          <onix1:MemoryMonitor>
+            <onix1:DeviceName>BreakoutBoard/MemoryMonitor</onix1:DeviceName>
+            <onix1:DeviceAddress>10</onix1:DeviceAddress>
+            <onix1:Enable>false</onix1:Enable>
+            <onix1:SamplesPerSecond>10</onix1:SamplesPerSecond>
+          </onix1:MemoryMonitor>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:ConfigureHeadstageNeuropixelsV2e">
+          <onix1:Name>HeadstageNeuropixelsV2e-A</onix1:Name>
+          <onix1:NeuropixelsV2e>
+            <onix1:DeviceName>HeadstageNeuropixelsV2e-A/NeuropixelsV2e</onix1:DeviceName>
+            <onix1:DeviceAddress>256</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:ConfigurationA xsi:type="onix1:NeuropixelsV2QuadShankProbeConfiguration">
+              <onix1:InvertPolarity>true</onix1:InvertPolarity>
+              <onix1:GainCalibrationFileName>C:\Users\Admi\Documents\Open Ephys\SO5627\23409410472\23409410472_gainCalValues.csv</onix1:GainCalibrationFileName>
+              <onix1:Reference>External</onix1:Reference>
+              <onix1:ProbeInterfaceFileName>C:\Users\Admi\Documents\Open Ephys\AidaProbeConfig16072026_shank1.json</onix1:ProbeInterfaceFileName>
+            </onix1:ConfigurationA>
+            <onix1:ConfigurationB xsi:type="onix1:NeuropixelsV2QuadShankProbeConfiguration">
+              <onix1:InvertPolarity>true</onix1:InvertPolarity>
+              <onix1:GainCalibrationFileName />
+              <onix1:Reference>External</onix1:Reference>
+              <onix1:ProbeInterfaceFileName>C:\Users\Admi\Documents\Open Ephys\pi_configurationB_empty.json</onix1:ProbeInterfaceFileName>
+            </onix1:ConfigurationB>
+          </onix1:NeuropixelsV2e>
+          <onix1:Bno055>
+            <onix1:DeviceName>HeadstageNeuropixelsV2e-A/PolledBno055</onix1:DeviceName>
+            <onix1:DeviceAddress>257</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:AxisMap>YZX</onix1:AxisMap>
+            <onix1:AxisSign>MirrorY MirrorX</onix1:AxisSign>
+          </onix1:Bno055>
+          <onix1:Port>PortA</onix1:Port>
+          <onix1:PortVoltage>
+            <onix1:Requested xsi:nil="true" />
+          </onix1:PortVoltage>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:StartAcquisition">
+          <onix1:ReadSize>16384</onix1:ReadSize>
+          <onix1:WriteSize>16384</onix1:WriteSize>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timestamp" />
+      </Expression>
+      <Expression xsi:type="io:CsvWriter">
+        <io:FileName>C:\Users\Admi\Documents\testdata\16072026\start-time_.csv</io:FileName>
+        <io:Append>false</io:Append>
+        <io:Overwrite>false</io:Overwrite>
+        <io:Suffix>Timestamp</io:Suffix>
+        <io:IncludeHeader>true</io:IncludeHeader>
+        <io:Selector>Timestamp.DateTime,Timestamp.UtcDateTime,Timestamp.LocalDateTime,Timestamp.Date,Timestamp.Day,Timestamp.DayOfWeek,Timestamp.DayOfYear,Timestamp.Hour,Timestamp.Millisecond,Timestamp.Minute,Timestamp.Month,Timestamp.Offset,Timestamp.Second,Timestamp.Ticks,Timestamp.UtcTicks,Timestamp.TimeOfDay,Timestamp.Year</io:Selector>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:NeuropixelsV2eData">
+          <onix1:DeviceName>HeadstageNeuropixelsV2e-A/NeuropixelsV2e</onix1:DeviceName>
+          <onix1:BufferSize>30</onix1:BufferSize>
+          <onix1:ProbeIndex>ProbeA</onix1:ProbeIndex>
+          <onix1:OrderByDepth>false</onix1:OrderByDepth>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Clock</Selector>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:MatrixWriter">
+          <dsp:Path>C:\Users\Admi\Documents\testdata\16072026\np2-a-clock_.raw</dsp:Path>
+          <dsp:Suffix>Timestamp</dsp:Suffix>
+          <dsp:Overwrite>false</dsp:Overwrite>
+          <dsp:Layout>ColumnMajor</dsp:Layout>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>AmplifierData</Selector>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:SelectChannels" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:MatrixWriter">
+          <dsp:Path>C:\Users\Admi\Documents\testdata\15072026\np2-a-amp_.raw</dsp:Path>
+          <dsp:Suffix>Timestamp</dsp:Suffix>
+          <dsp:Overwrite>false</dsp:Overwrite>
+          <dsp:Layout>ColumnMajor</dsp:Layout>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="p1:SendMatOverSocket">
+            <p1:Connection>OpenEphysGUI</p1:Connection>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>AmplifierData</Selector>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:SelectChannels">
+          <dsp:Channels />
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="p2:WaveformVisualizerBuilder">
+        <p2:SampleRate>30000</p2:SampleRate>
+        <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+        <p2:ChannelHeight>20</p2:ChannelHeight>
+        <p2:Timebase xsi:nil="true" />
+        <p2:ColorGrouping xsi:nil="true" />
+        <p2:RangeAmplitude xsi:nil="true" />
+        <p2:RangeOffset xsi:nil="true" />
+        <p2:RangeLabel>Shank1</p2:RangeLabel>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:FrequencyFilter">
+          <dsp:SampleRate>30000</dsp:SampleRate>
+          <dsp:Cutoff1>600</dsp:Cutoff1>
+          <dsp:Cutoff2>30000</dsp:Cutoff2>
+          <dsp:KernelLength>30</dsp:KernelLength>
+          <dsp:FilterType>BandPass</dsp:FilterType>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:ConvertScale">
+          <dsp:Depth>F32</dsp:Depth>
+          <dsp:Scale>3.05176</dsp:Scale>
+          <dsp:Shift>0</dsp:Shift>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:SelectChannels" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:DetectSpikes">
+          <dsp:Delay>0</dsp:Delay>
+          <dsp:Length>100</dsp:Length>
+          <dsp:Threshold>
+            <dsp:double>40</dsp:double>
+          </dsp:Threshold>
+          <dsp:WaveformRefinement>AlignPeaks</dsp:WaveformRefinement>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:FrequencyFilter">
+            <dsp:SampleRate>30000</dsp:SampleRate>
+            <dsp:Cutoff1>0.5</dsp:Cutoff1>
+            <dsp:Cutoff2>500</dsp:Cutoff2>
+            <dsp:KernelLength>600</dsp:KernelLength>
+            <dsp:FilterType>BandPass</dsp:FilterType>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>5</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+          <p2:RangeLabel>Shank1</p2:RangeLabel>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>5</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+          <p2:RangeLabel>Shank1</p2:RangeLabel>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:FrequencyFilter">
+            <dsp:SampleRate>30000</dsp:SampleRate>
+            <dsp:Cutoff1>125</dsp:Cutoff1>
+            <dsp:Cutoff2>300</dsp:Cutoff2>
+            <dsp:KernelLength>60</dsp:KernelLength>
+            <dsp:FilterType>BandPass</dsp:FilterType>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:DetectSpikes">
+            <dsp:Delay>0</dsp:Delay>
+            <dsp:Length>33</dsp:Length>
+            <dsp:Threshold>
+              <dsp:double>-50</dsp:double>
+            </dsp:Threshold>
+            <dsp:WaveformRefinement>AlignPeaks</dsp:WaveformRefinement>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>5</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+          <p2:RangeLabel>Shank1</p2:RangeLabel>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>0</dsp:StartRow>
+            <dsp:EndRow>96</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>5</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+          <p2:RangeLabel>Shank1</p2:RangeLabel>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>97</dsp:StartRow>
+            <dsp:EndRow>191</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>20</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>192</dsp:StartRow>
+            <dsp:EndRow>287</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight xsi:nil="true" />
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>288</dsp:StartRow>
+            <dsp:EndRow>384</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight xsi:nil="true" />
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="onix1:NeuropixelsV2eData">
+            <onix1:DeviceName>HeadstageNeuropixelsV2e-A/NeuropixelsV2e</onix1:DeviceName>
+            <onix1:BufferSize>30</onix1:BufferSize>
+            <onix1:ProbeIndex>ProbeA</onix1:ProbeIndex>
+            <onix1:OrderByDepth>true</onix1:OrderByDepth>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="MemberSelector">
+          <Selector>AmplifierData</Selector>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>97</dsp:StartRow>
+            <dsp:EndRow>191</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight>20</p2:ChannelHeight>
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>192</dsp:StartRow>
+            <dsp:EndRow>287</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight xsi:nil="true" />
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>288</dsp:StartRow>
+            <dsp:EndRow>384</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight xsi:nil="true" />
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:Submatrix">
+            <dsp:StartRow>288</dsp:StartRow>
+            <dsp:EndRow>384</dsp:EndRow>
+            <dsp:StartCol>0</dsp:StartCol>
+            <dsp:EndCol xsi:nil="true" />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels">
+            <dsp:Channels />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="p2:WaveformVisualizerBuilder">
+          <p2:SampleRate>30000</p2:SampleRate>
+          <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+          <p2:ChannelHeight xsi:nil="true" />
+          <p2:Timebase xsi:nil="true" />
+          <p2:ColorGrouping xsi:nil="true" />
+          <p2:RangeAmplitude xsi:nil="true" />
+          <p2:RangeOffset xsi:nil="true" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="MemberSelector">
+          <Selector>AmplifierData</Selector>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:SelectChannels" />
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:MatrixWriter">
+            <dsp:Path>C:\Users\Admi\Documents\testdata\16072026\np2-a-amp-sortedByDepth_</dsp:Path>
+            <dsp:Suffix>Timestamp</dsp:Suffix>
+            <dsp:Overwrite>false</dsp:Overwrite>
+            <dsp:Layout>ColumnMajor</dsp:Layout>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="MemberSelector">
+          <Selector>Clock</Selector>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="dsp:MatrixWriter">
+            <dsp:Path>C:\Users\Admi\Documents\testdata\16072026\np2-a-clock-sortedByDepth_</dsp:Path>
+            <dsp:Suffix>Timestamp</dsp:Suffix>
+            <dsp:Overwrite>false</dsp:Overwrite>
+            <dsp:Layout>ColumnMajor</dsp:Layout>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="GroupWorkflow">
+          <Name>All channels visualiser</Name>
+          <Workflow>
+            <Nodes>
+              <Expression xsi:type="WorkflowInput">
+                <Name>Source1</Name>
+              </Expression>
+              <Expression xsi:type="Combinator">
+                <Combinator xsi:type="dsp:Submatrix">
+                  <dsp:StartRow>0</dsp:StartRow>
+                  <dsp:EndRow>96</dsp:EndRow>
+                  <dsp:StartCol>0</dsp:StartCol>
+                  <dsp:EndCol xsi:nil="true" />
+                </Combinator>
+              </Expression>
+              <Expression xsi:type="Combinator">
+                <Combinator xsi:type="dsp:SelectChannels">
+                  <dsp:Channels />
+                </Combinator>
+              </Expression>
+              <Expression xsi:type="p2:WaveformVisualizerBuilder">
+                <p2:SampleRate>30000</p2:SampleRate>
+                <p2:MaxSamplesPerChannel>1920</p2:MaxSamplesPerChannel>
+                <p2:ChannelHeight>5</p2:ChannelHeight>
+                <p2:Timebase xsi:nil="true" />
+                <p2:ColorGrouping xsi:nil="true" />
+                <p2:RangeAmplitude xsi:nil="true" />
+                <p2:RangeOffset xsi:nil="true" />
+                <p2:RangeLabel>Shank1</p2:RangeLabel>
+              </Expression>
+              <Expression xsi:type="WorkflowOutput" />
+            </Nodes>
+            <Edges>
+              <Edge From="0" To="1" Label="Source1" />
+              <Edge From="1" To="2" Label="Source1" />
+              <Edge From="2" To="3" Label="Source1" />
+              <Edge From="3" To="4" Label="Source1" />
+            </Edges>
+          </Workflow>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="gl:DrawFramebuffer">
+            <gl:RenderState />
+            <gl:FramebufferAttachments />
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="onix1:AnalogInput">
+            <onix1:BufferSize>100</onix1:BufferSize>
+            <onix1:DataType>S16</onix1:DataType>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="onix1:ConfigureNeuropixelsV2e">
+            <onix1:DeviceAddress>0</onix1:DeviceAddress>
+            <onix1:Enable>true</onix1:Enable>
+            <onix1:ConfigurationA xsi:type="onix1:NeuropixelsV2QuadShankProbeConfiguration">
+              <onix1:InvertPolarity>true</onix1:InvertPolarity>
+              <onix1:Reference>External</onix1:Reference>
+            </onix1:ConfigurationA>
+            <onix1:ConfigurationB xsi:type="onix1:NeuropixelsV2QuadShankProbeConfiguration">
+              <onix1:InvertPolarity>true</onix1:InvertPolarity>
+              <onix1:Reference>External</onix1:Reference>
+            </onix1:ConfigurationB>
+          </Combinator>
+        </Builder>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:PolledBno055Data">
+          <onix1:DeviceName>HeadstageNeuropixelsV2e-A/PolledBno055</onix1:DeviceName>
+          <onix1:PolledRegisters>All</onix1:PolledRegisters>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="io:CsvWriter">
+        <io:FileName>C:\Users\Admi\Documents\testdata\15072026\Bnodata_.csv</io:FileName>
+        <io:Append>false</io:Append>
+        <io:Overwrite>false</io:Overwrite>
+        <io:Suffix>Timestamp</io:Suffix>
+        <io:IncludeHeader>true</io:IncludeHeader>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Quaternion</Selector>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="OpenEphys.Commutator:AutoCommutator.bonsai">
+        <PortName>COM3</PortName>
+        <Enable>true</Enable>
+        <EnableLed>true</EnableLed>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:OutputClockHardwareParameters">
+          <onix1:DeviceName>BreakoutBoard/OutputClock</onix1:DeviceName>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="io:CsvWriter">
+        <io:FileName>C:\Users\Admi\Documents\testdata\16072026\output-clock_.csv</io:FileName>
+        <io:Append>false</io:Append>
+        <io:Overwrite>false</io:Overwrite>
+        <io:Suffix>Timestamp</io:Suffix>
+        <io:IncludeHeader>true</io:IncludeHeader>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="onix1:HarpSyncInputData">
+          <onix1:DeviceName>BreakoutBoard/HarpSyncInput</onix1:DeviceName>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>HarpTime</Selector>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Clock</Selector>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Zip" />
+      </Expression>
+      <Expression xsi:type="scr:ExpressionTransform">
+        <scr:Expression>new(item1 as HarpTimestamp,Item2 as OnixEphysTimestamp)</scr:Expression>
+      </Expression>
+      <Expression xsi:type="io:CsvWriter">
+        <io:FileName>C:\Users\Admi\Documents\testdata\16072026\harp_onix_timestamp.csv</io:FileName>
+        <io:Append>false</io:Append>
+        <io:Overwrite>false</io:Overwrite>
+        <io:Suffix>Timestamp</io:Suffix>
+        <io:IncludeHeader>true</io:IncludeHeader>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="1" To="2" Label="Source1" />
+      <Edge From="2" To="3" Label="Source1" />
+      <Edge From="3" To="4" Label="Source1" />
+      <Edge From="4" To="5" Label="Source1" />
+      <Edge From="4" To="6" Label="Source1" />
+      <Edge From="6" To="7" Label="Source1" />
+      <Edge From="8" To="9" Label="Source1" />
+      <Edge From="8" To="11" Label="Source1" />
+      <Edge From="8" To="15" Label="Source1" />
+      <Edge From="9" To="10" Label="Source1" />
+      <Edge From="11" To="12" Label="Source1" />
+      <Edge From="12" To="13" Label="Source1" />
+      <Edge From="13" To="14" Label="Source1" />
+      <Edge From="15" To="16" Label="Source1" />
+      <Edge From="15" To="28" Label="Source1" />
+      <Edge From="15" To="31" Label="Source1" />
+      <Edge From="15" To="34" Label="Source1" />
+      <Edge From="15" To="37" Label="Source1" />
+      <Edge From="16" To="17" Label="Source1" />
+      <Edge From="16" To="18" Label="Source1" />
+      <Edge From="16" To="22" Label="Source1" />
+      <Edge From="16" To="24" Label="Source1" />
+      <Edge From="16" To="25" Label="Source1" />
+      <Edge From="18" To="19" Label="Source1" />
+      <Edge From="19" To="20" Label="Source1" />
+      <Edge From="20" To="21" Label="Source1" />
+      <Edge From="22" To="23" Label="Source1" />
+      <Edge From="25" To="26" Label="Source1" />
+      <Edge From="26" To="27" Label="Source1" />
+      <Edge From="28" To="29" Label="Source1" />
+      <Edge From="29" To="30" Label="Source1" />
+      <Edge From="31" To="32" Label="Source1" />
+      <Edge From="32" To="33" Label="Source1" />
+      <Edge From="34" To="35" Label="Source1" />
+      <Edge From="35" To="36" Label="Source1" />
+      <Edge From="37" To="38" Label="Source1" />
+      <Edge From="38" To="39" Label="Source1" />
+      <Edge From="40" To="41" Label="Source1" />
+      <Edge From="40" To="54" Label="Source1" />
+      <Edge From="40" To="57" Label="Source1" />
+      <Edge From="41" To="42" Label="Source1" />
+      <Edge From="41" To="45" Label="Source1" />
+      <Edge From="41" To="48" Label="Source1" />
+      <Edge From="41" To="51" Label="Source1" />
+      <Edge From="41" To="59" Label="Source1" />
+      <Edge From="42" To="43" Label="Source1" />
+      <Edge From="43" To="44" Label="Source1" />
+      <Edge From="45" To="46" Label="Source1" />
+      <Edge From="46" To="47" Label="Source1" />
+      <Edge From="48" To="49" Label="Source1" />
+      <Edge From="49" To="50" Label="Source1" />
+      <Edge From="51" To="52" Label="Source1" />
+      <Edge From="52" To="53" Label="Source1" />
+      <Edge From="54" To="55" Label="Source1" />
+      <Edge From="55" To="56" Label="Source1" />
+      <Edge From="57" To="58" Label="Source1" />
+      <Edge From="63" To="64" Label="Source1" />
+      <Edge From="64" To="65" Label="Source1" />
+      <Edge From="65" To="66" Label="Source1" />
+      <Edge From="67" To="68" Label="Source1" />
+      <Edge From="69" To="70" Label="Source1" />
+      <Edge From="69" To="71" Label="Source1" />
+      <Edge From="70" To="72" Label="Source1" />
+      <Edge From="71" To="72" Label="Source2" />
+      <Edge From="72" To="73" Label="Source1" />
+      <Edge From="73" To="74" Label="Source1" />
+    </Edges>
+  </Workflow>
+</WorkflowBuilder>
