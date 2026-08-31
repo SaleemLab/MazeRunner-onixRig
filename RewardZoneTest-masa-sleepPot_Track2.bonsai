@@ -392,10 +392,10 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>180</cv:X>
-                  <cv:Y>34</cv:Y>
-                  <cv:Width>950</cv:Width>
-                  <cv:Height>950</cv:Height>
+                  <cv:X>175</cv:X>
+                  <cv:Y>83</cv:Y>
+                  <cv:Width>220</cv:Width>
+                  <cv:Height>229</cv:Height>
                 </cv:RegionOfInterest>
               </Combinator>
             </Expression>
@@ -448,10 +448,10 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>180</cv:X>
-                  <cv:Y>34</cv:Y>
-                  <cv:Width>950</cv:Width>
-                  <cv:Height>950</cv:Height>
+                  <cv:X>175</cv:X>
+                  <cv:Y>83</cv:Y>
+                  <cv:Width>220</cv:Width>
+                  <cv:Height>229</cv:Height>
                 </cv:RegionOfInterest>
               </Combinator>
             </Expression>
@@ -1939,7 +1939,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26019\20260804\M26019_SleepPot_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2216,10 +2216,10 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:Crop">
           <cv:RegionOfInterest>
-            <cv:X>180</cv:X>
-            <cv:Y>34</cv:Y>
-            <cv:Width>950</cv:Width>
-            <cv:Height>950</cv:Height>
+            <cv:X>175</cv:X>
+            <cv:Y>83</cv:Y>
+            <cv:Width>220</cv:Width>
+            <cv:Height>229</cv:Height>
           </cv:RegionOfInterest>
         </Combinator>
       </Expression>
@@ -2255,16 +2255,6 @@
       <Expression xsi:type="rx:Accumulate" />
       <Expression xsi:type="rx:BehaviorSubject">
         <Name>CameraFrame</Name>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:Crop">
-          <cv:RegionOfInterest>
-            <cv:X>180</cv:X>
-            <cv:Y>34</cv:Y>
-            <cv:Width>950</cv:Width>
-            <cv:Height>950</cv:Height>
-          </cv:RegionOfInterest>
-        </Combinator>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>AnimalPosition</Name>
@@ -2322,7 +2312,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>M26020</Value>
+                <Value>M26019</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2499,7 +2489,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26019\20260804\M26019_SleepPot_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2686,7 +2676,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26019\20260804\M26019_SleepPot_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -3037,7 +3027,6 @@ Press Shift + T to stop camera (end experiment)</Description>
       <Edge From="5" To="11" Label="Source1" />
       <Edge From="5" To="16" Label="Source1" />
       <Edge From="5" To="23" Label="Source1" />
-      <Edge From="5" To="27" Label="Source1" />
       <Edge From="6" To="7" Label="Source2" />
       <Edge From="7" To="8" Label="Source1" />
       <Edge From="7" To="17" Label="Source1" />
@@ -3055,18 +3044,18 @@ Press Shift + T to stop camera (end experiment)</Description>
       <Edge From="23" To="24" Label="Source1" />
       <Edge From="24" To="25" Label="Source1" />
       <Edge From="25" To="26" Label="Source1" />
+      <Edge From="29" To="30" Label="Source1" />
       <Edge From="30" To="31" Label="Source1" />
-      <Edge From="31" To="32" Label="Source1" />
-      <Edge From="33" To="34" Label="Source1" />
-      <Edge From="35" To="36" Label="Source1" />
-      <Edge From="37" To="39" Label="Source1" />
-      <Edge From="38" To="39" Label="Source2" />
-      <Edge From="40" To="41" Label="Source1" />
-      <Edge From="44" To="45" Label="Source1" />
+      <Edge From="32" To="33" Label="Source1" />
+      <Edge From="34" To="35" Label="Source1" />
+      <Edge From="36" To="38" Label="Source1" />
+      <Edge From="37" To="38" Label="Source2" />
+      <Edge From="39" To="40" Label="Source1" />
+      <Edge From="43" To="44" Label="Source1" />
+      <Edge From="46" To="47" Label="Source1" />
       <Edge From="47" To="48" Label="Source1" />
-      <Edge From="48" To="49" Label="Source1" />
+      <Edge From="49" To="50" Label="Source1" />
       <Edge From="50" To="51" Label="Source1" />
-      <Edge From="51" To="52" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
