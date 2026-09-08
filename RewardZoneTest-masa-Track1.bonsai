@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WorkflowBuilder Version="2.9.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:aeon-video="clr-namespace:Aeon.Video;assembly=Aeon.Video"
                  xmlns:spk="clr-namespace:Bonsai.Spinnaker;assembly=Bonsai.Spinnaker"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
@@ -18,9 +19,13 @@
   <Workflow>
     <Nodes>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="spk:SpinnakerCapture">
-          <spk:Index>1</spk:Index>
+        <Combinator xsi:type="aeon-video:SpinnakerCapture">
+          <spk:Index xsi:nil="true" />
+          <spk:SerialNumber>24166055</spk:SerialNumber>
           <spk:ColorProcessing>Default</spk:ColorProcessing>
+          <aeon-video:ExposureTime>15000</aeon-video:ExposureTime>
+          <aeon-video:Gain>35</aeon-video:Gain>
+          <aeon-video:Binning>1</aeon-video:Binning>
         </Combinator>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
@@ -183,7 +188,7 @@
               <Combinator xsi:type="cv:BackgroundSubtraction">
                 <cv:BackgroundFrames>100</cv:BackgroundFrames>
                 <cv:AdaptationRate>0</cv:AdaptationRate>
-                <cv:ThresholdValue>35</cv:ThresholdValue>
+                <cv:ThresholdValue>50</cv:ThresholdValue>
                 <cv:ThresholdType>Binary</cv:ThresholdType>
                 <cv:SubtractionMethod>Dark</cv:SubtractionMethod>
               </Combinator>
@@ -392,10 +397,10 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>202</cv:X>
-                  <cv:Y>202</cv:Y>
-                  <cv:Width>139</cv:Width>
-                  <cv:Height>144</cv:Height>
+                  <cv:X>207</cv:X>
+                  <cv:Y>193</cv:Y>
+                  <cv:Width>130</cv:Width>
+                  <cv:Height>130</cv:Height>
                 </cv:RegionOfInterest>
               </Combinator>
             </Expression>
@@ -448,10 +453,10 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>1242</cv:X>
-                  <cv:Y>868</cv:Y>
-                  <cv:Width>139</cv:Width>
-                  <cv:Height>144</cv:Height>
+                  <cv:X>1255</cv:X>
+                  <cv:Y>850</cv:Y>
+                  <cv:Width>130</cv:Width>
+                  <cv:Height>130</cv:Height>
                 </cv:RegionOfInterest>
               </Combinator>
             </Expression>
@@ -1939,7 +1944,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\Ellie\20260721\Ellie_Track1RUN1_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2246,6 +2251,12 @@
       <Expression xsi:type="rx:BehaviorSubject">
         <Name>CameraFrame</Name>
       </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timestamp" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:TimeInterval" />
+      </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>AnimalPosition</Name>
       </Expression>
@@ -2294,7 +2305,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>Track1RUN1</Value>
+                <Value>Track1RUN1_Step</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2302,7 +2313,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>Ellie</Value>
+                <Value>M26021</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2479,7 +2490,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\Ellie\20260721\Ellie_Track1RUN1_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2666,7 +2677,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\Ellie\20260721\Ellie_Track1RUN1_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -3006,12 +3017,18 @@ Press Shift + T to stop camera (end experiment)</Description>
       <Expression xsi:type="MemberSelector">
         <Selector>Seconds</Selector>
       </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="dsp:Difference">
+          <dsp:Order>1</dsp:Order>
+        </Combinator>
+      </Expression>
     </Nodes>
     <Edges>
       <Edge From="0" To="2" Label="Source1" />
       <Edge From="1" To="2" Label="Source2" />
       <Edge From="2" To="3" Label="Source1" />
       <Edge From="3" To="4" Label="Source1" />
+      <Edge From="3" To="26" Label="Source1" />
       <Edge From="4" To="5" Label="Source1" />
       <Edge From="5" To="7" Label="Source1" />
       <Edge From="5" To="11" Label="Source1" />
@@ -3033,18 +3050,20 @@ Press Shift + T to stop camera (end experiment)</Description>
       <Edge From="22" To="23" Label="Source1" />
       <Edge From="23" To="24" Label="Source1" />
       <Edge From="24" To="25" Label="Source1" />
-      <Edge From="28" To="29" Label="Source1" />
-      <Edge From="29" To="30" Label="Source1" />
+      <Edge From="26" To="27" Label="Source1" />
+      <Edge From="30" To="31" Label="Source1" />
       <Edge From="31" To="32" Label="Source1" />
       <Edge From="33" To="34" Label="Source1" />
-      <Edge From="35" To="37" Label="Source1" />
-      <Edge From="36" To="37" Label="Source2" />
-      <Edge From="38" To="39" Label="Source1" />
-      <Edge From="42" To="43" Label="Source1" />
-      <Edge From="45" To="46" Label="Source1" />
-      <Edge From="46" To="47" Label="Source1" />
+      <Edge From="35" To="36" Label="Source1" />
+      <Edge From="37" To="39" Label="Source1" />
+      <Edge From="38" To="39" Label="Source2" />
+      <Edge From="40" To="41" Label="Source1" />
+      <Edge From="44" To="45" Label="Source1" />
+      <Edge From="47" To="48" Label="Source1" />
       <Edge From="48" To="49" Label="Source1" />
-      <Edge From="49" To="50" Label="Source1" />
+      <Edge From="50" To="51" Label="Source1" />
+      <Edge From="51" To="52" Label="Source1" />
+      <Edge From="52" To="53" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>

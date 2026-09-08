@@ -1,36 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VisualizerLayout Version="2.9.0">
-  <WindowSettings Index="26">
-    <Location>
-      <X>1049</X>
-      <Y>183</Y>
-    </Location>
-    <Size>
-      <Width>660</Width>
-      <Height>607</Height>
-    </Size>
-    <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
-    <VisualizerSettings>
-      <IplImageVisualizer />
-    </VisualizerSettings>
-  </WindowSettings>
-  <WindowSettings Index="49">
+  <WindowSettings Index="48">
     <NestedLayout>
       <WindowSettings Index="0">
         <NestedLayout>
-          <WindowSettings Index="10">
+          <WindowSettings Index="13">
             <Visible>false</Visible>
-            <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
-            <VisualizerSettings>
-              <IplImageVisualizer />
-            </VisualizerSettings>
-          </WindowSettings>
-        </NestedLayout>
-      </WindowSettings>
-      <WindowSettings Index="2">
-        <NestedLayout>
-          <WindowSettings Index="11">
-            <Visible>false</Visible>
+            <Location>
+              <X>182</X>
+              <Y>182</Y>
+            </Location>
+            <Size>
+              <Width>416</Width>
+              <Height>279</Height>
+            </Size>
             <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
             <VisualizerSettings>
               <TimeSeriesVisualizer>
@@ -41,56 +24,26 @@
               </TimeSeriesVisualizer>
             </VisualizerSettings>
           </WindowSettings>
-        </NestedLayout>
-      </WindowSettings>
-      <WindowSettings Index="3">
-        <Visible>false</Visible>
-        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
-        <VisualizerSettings>
-          <ObjectTextVisualizer />
-        </VisualizerSettings>
-        <NestedLayout>
-          <WindowSettings Index="11">
+          <WindowSettings Index="14">
             <Visible>false</Visible>
-            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+            <Location>
+              <X>191</X>
+              <Y>312</Y>
+            </Location>
+            <Size>
+              <Width>336</Width>
+              <Height>159</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
             <VisualizerSettings>
-              <TimeSeriesVisualizer>
-                <Capacity>640</Capacity>
-                <Min>0</Min>
-                <Max>1.1</Max>
-                <AutoScale>true</AutoScale>
-              </TimeSeriesVisualizer>
-            </VisualizerSettings>
-          </WindowSettings>
-          <WindowSettings Index="17">
-            <Visible>false</Visible>
-            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
-            <VisualizerSettings>
-              <TimeSeriesVisualizer>
-                <Capacity>640</Capacity>
-                <Min>0</Min>
-                <Max>1.1</Max>
-                <AutoScale>true</AutoScale>
-              </TimeSeriesVisualizer>
-            </VisualizerSettings>
-          </WindowSettings>
-          <WindowSettings Index="18">
-            <Visible>false</Visible>
-            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
-            <VisualizerSettings>
-              <TimeSeriesVisualizer>
-                <Capacity>640</Capacity>
-                <Min>0</Min>
-                <Max>1.1</Max>
-                <AutoScale>true</AutoScale>
-              </TimeSeriesVisualizer>
+              <ObjectTextVisualizer />
             </VisualizerSettings>
           </WindowSettings>
         </NestedLayout>
       </WindowSettings>
     </NestedLayout>
   </WindowSettings>
-  <WindowSettings Index="52">
+  <WindowSettings Index="51">
     <Visible>false</Visible>
     <Location>
       <X>104</X>
@@ -104,6 +57,22 @@
     <VisualizerSettings>
       <ObjectTextVisualizer />
     </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="52">
+    <Visible>false</Visible>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+    <NestedLayout>
+      <WindowSettings Index="2">
+        <Visible>false</Visible>
+        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+        <VisualizerSettings>
+          <ObjectTextVisualizer />
+        </VisualizerSettings>
+      </WindowSettings>
+    </NestedLayout>
   </WindowSettings>
   <WindowSettings Index="53">
     <Visible>false</Visible>
@@ -121,23 +90,7 @@
       </WindowSettings>
     </NestedLayout>
   </WindowSettings>
-  <WindowSettings Index="54">
-    <Visible>false</Visible>
-    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
-    <VisualizerSettings>
-      <ObjectTextVisualizer />
-    </VisualizerSettings>
-    <NestedLayout>
-      <WindowSettings Index="2">
-        <Visible>false</Visible>
-        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
-        <VisualizerSettings>
-          <ObjectTextVisualizer />
-        </VisualizerSettings>
-      </WindowSettings>
-    </NestedLayout>
-  </WindowSettings>
-  <WindowSettings Index="60">
+  <WindowSettings Index="59">
     <Visible>false</Visible>
     <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
     <VisualizerSettings>
@@ -149,7 +102,7 @@
       </TimeSeriesVisualizer>
     </VisualizerSettings>
   </WindowSettings>
-  <WindowSettings Index="61">
+  <WindowSettings Index="60">
     <Visible>false</Visible>
     <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
     <VisualizerSettings>
@@ -161,7 +114,7 @@
       </TimeSeriesVisualizer>
     </VisualizerSettings>
   </WindowSettings>
-  <WindowSettings Index="62">
+  <WindowSettings Index="61">
     <Visible>false</Visible>
     <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
     <VisualizerSettings>
