@@ -406,8 +406,8 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>157</cv:X>
-                  <cv:Y>72</cv:Y>
+                  <cv:X>576</cv:X>
+                  <cv:Y>63</cv:Y>
                   <cv:Width>110</cv:Width>
                   <cv:Height>110</cv:Height>
                 </cv:RegionOfInterest>
@@ -462,8 +462,8 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="cv:Crop">
                 <cv:RegionOfInterest>
-                  <cv:X>963</cv:X>
-                  <cv:Y>891</cv:Y>
+                  <cv:X>805</cv:X>
+                  <cv:Y>918</cv:Y>
                   <cv:Width>110</cv:Width>
                   <cv:Height>110</cv:Height>
                 </cv:RegionOfInterest>
@@ -1953,7 +1953,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260908\M26021_Track2RUN1_Linear_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Track2RUN1_Linear2_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2314,7 +2314,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>Track2RUN1_Linear</Value>
+                <Value>Track2RUN1_Linear2</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2499,7 +2499,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260904\M26021_Track2RUN1_Lshape3_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Track2RUN1_Linear2_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2686,7 +2686,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260904\M26021_Track2RUN1_Lshape3_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Track2RUN1_Linear2_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>

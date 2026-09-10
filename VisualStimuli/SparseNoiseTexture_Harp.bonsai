@@ -13,6 +13,7 @@
                  xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
                  xmlns:beh="clr-namespace:Harp.Behavior;assembly=Harp.Behavior"
                  xmlns:harp="clr-namespace:Bonsai.Harp;assembly=Bonsai.Harp"
+                 xmlns:aeon-video="clr-namespace:Aeon.Video;assembly=Aeon.Video"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
                  xmlns:p1="clr-namespace:;assembly=Extensions"
                  xmlns:port="clr-namespace:Bonsai.IO.Ports;assembly=Bonsai.System"
@@ -544,7 +545,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="dsp:MatrixWriter">
-                <dsp:Path>C:\Users\Bendor Lab\Documents\data\Data\test\20260902\SparseNoise_test_Log.bin</dsp:Path>
+                <dsp:Path>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260910\SparseNoise_sh1_M26021_Log.bin</dsp:Path>
                 <dsp:Suffix>Timestamp</dsp:Suffix>
                 <dsp:Overwrite>false</dsp:Overwrite>
                 <dsp:Layout>ColumnMajor</dsp:Layout>
@@ -680,7 +681,7 @@
             </Expression>
             <Expression xsi:type="Equal">
               <Operand xsi:type="FloatProperty">
-                <Value>600</Value>
+                <Value>300</Value>
               </Operand>
             </Expression>
             <Expression xsi:type="WorkflowOutput" />
@@ -1018,6 +1019,22 @@
               <Name>SyncPulse</Name>
             </Expression>
             <Expression xsi:type="Combinator">
+              <Combinator xsi:type="BooleanProperty">
+                <Value>false</Value>
+              </Combinator>
+            </Expression>
+            <Expression xsi:type="rx:BehaviorSubject">
+              <Name>InsideZone</Name>
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="IntProperty">
+                <Value>1</Value>
+              </Combinator>
+            </Expression>
+            <Expression xsi:type="rx:BehaviorSubject">
+              <Name>Lap ID</Name>
+            </Expression>
+            <Expression xsi:type="Combinator">
               <Combinator xsi:type="FloatProperty">
                 <Value>0</Value>
               </Combinator>
@@ -1072,6 +1089,8 @@
             <Edge From="19" To="20" Label="Source1" />
             <Edge From="21" To="22" Label="Source1" />
             <Edge From="23" To="24" Label="Source1" />
+            <Edge From="25" To="26" Label="Source1" />
+            <Edge From="27" To="28" Label="Source1" />
           </Edges>
         </Workflow>
       </Expression>
@@ -1095,9 +1114,9 @@
         <LocationY>-26</LocationY>
         <Layer>1</Layer>
         <Angle>0</Angle>
-        <ColorR>1</ColorR>
-        <ColorG>1</ColorG>
-        <ColorB>1</ColorB>
+        <ColorR>0</ColorR>
+        <ColorG>0</ColorG>
+        <ColorB>0</ColorB>
         <ColorA>1</ColorA>
       </Expression>
       <Expression xsi:type="Combinator">
@@ -1120,7 +1139,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>SparseNoise</Value>
+                <Value>SparseNoise_sh1</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -1128,7 +1147,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>test</Value>
+                <Value>M26021</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -1270,7 +1289,7 @@ def generate():
                     <Name>VideoLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\test\20260902\Checkboard_test_Video.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260910\SparseNoise_sh1_M26021_Video.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -1287,14 +1306,32 @@ def generate():
                   <Expression xsi:type="MemberSelector">
                     <Selector>Seconds</Selector>
                   </Expression>
+                  <Expression xsi:type="Disable">
+                    <Builder xsi:type="Combinator">
+                      <Combinator xsi:type="spk:SpinnakerCapture">
+                        <spk:Index>0</spk:Index>
+                        <spk:SerialNumber>26312603</spk:SerialNumber>
+                        <spk:ColorProcessing>Default</spk:ColorProcessing>
+                      </Combinator>
+                    </Builder>
+                  </Expression>
                   <Expression xsi:type="Combinator">
-                    <Combinator xsi:type="spk:SpinnakerCapture">
-                      <spk:Index>0</spk:Index>
+                    <Combinator xsi:type="aeon-video:SpinnakerCapture">
+                      <spk:Index xsi:nil="true" />
+                      <spk:SerialNumber>26312603</spk:SerialNumber>
                       <spk:ColorProcessing>Default</spk:ColorProcessing>
+                      <aeon-video:ExposureTime>15000</aeon-video:ExposureTime>
+                      <aeon-video:Gain>10</aeon-video:Gain>
+                      <aeon-video:Binning>1</aeon-video:Binning>
                     </Combinator>
                   </Expression>
                   <Expression xsi:type="MemberSelector">
                     <Selector>Image</Selector>
+                  </Expression>
+                  <Expression xsi:type="Combinator">
+                    <Combinator xsi:type="cv:Flip">
+                      <cv:Mode>Both</cv:Mode>
+                    </Combinator>
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="rx:ElementIndex" />
@@ -1351,7 +1388,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\test\20260902\Checkboard_test_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260910\SparseNoise_sh1_M26021_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -1364,6 +1401,12 @@ def generate():
                       <cv:ResizeInterpolation>NearestNeighbor</cv:ResizeInterpolation>
                     </Combinator>
                   </Expression>
+                  <Expression xsi:type="Combinator">
+                    <Combinator xsi:type="rx:Timestamp" />
+                  </Expression>
+                  <Expression xsi:type="Combinator">
+                    <Combinator xsi:type="rx:TimeInterval" />
+                  </Expression>
                 </Nodes>
                 <Edges>
                   <Edge From="0" To="1" Label="Source1" />
@@ -1373,24 +1416,28 @@ def generate():
                   <Edge From="4" To="5" Label="Source4" />
                   <Edge From="6" To="7" Label="Source1" />
                   <Edge From="7" To="8" Label="Source1" />
-                  <Edge From="8" To="15" Label="Source1" />
+                  <Edge From="8" To="17" Label="Source1" />
                   <Edge From="9" To="10" Label="Source1" />
                   <Edge From="10" To="11" Label="Source1" />
-                  <Edge From="10" To="26" Label="Source1" />
                   <Edge From="11" To="12" Label="Source1" />
                   <Edge From="12" To="13" Label="Source1" />
+                  <Edge From="12" To="28" Label="Source1" />
+                  <Edge From="12" To="29" Label="Source1" />
                   <Edge From="13" To="14" Label="Source1" />
-                  <Edge From="14" To="15" Label="Source2" />
-                  <Edge From="15" To="20" Label="Source1" />
-                  <Edge From="16" To="17" Label="Source1" />
-                  <Edge From="17" To="18" Label="Source1" />
+                  <Edge From="14" To="15" Label="Source1" />
+                  <Edge From="15" To="16" Label="Source1" />
+                  <Edge From="16" To="17" Label="Source2" />
+                  <Edge From="17" To="22" Label="Source1" />
                   <Edge From="18" To="19" Label="Source1" />
-                  <Edge From="19" To="20" Label="Source2" />
+                  <Edge From="19" To="20" Label="Source1" />
                   <Edge From="20" To="21" Label="Source1" />
-                  <Edge From="21" To="22" Label="Source1" />
+                  <Edge From="21" To="22" Label="Source2" />
                   <Edge From="22" To="23" Label="Source1" />
+                  <Edge From="23" To="24" Label="Source1" />
                   <Edge From="24" To="25" Label="Source1" />
-                  <Edge From="25" To="26" Label="Source2" />
+                  <Edge From="26" To="27" Label="Source1" />
+                  <Edge From="27" To="28" Label="Source2" />
+                  <Edge From="29" To="30" Label="Source1" />
                 </Edges>
               </Workflow>
             </Expression>
@@ -1525,7 +1572,7 @@ def generate():
                     <Name>PDLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\test\20260902\Checkboard_test_PDLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260910\SparseNoise_sh1_M26021_PDLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -1613,7 +1660,7 @@ def generate():
                     <Name>PeripheralLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\test\20260902\Checkboard_test_PeripheralLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260910\SparseNoise_sh1_M26021_PeripheralLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>

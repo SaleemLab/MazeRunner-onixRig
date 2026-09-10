@@ -1944,7 +1944,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260908\M26021_Track1RUN1_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2305,7 +2305,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>Track1RUN1_Step</Value>
+                <Value>Track1RUN1</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2490,7 +2490,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260908\M26021_Track1RUN1_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2677,7 +2677,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260907\M26021_Track1RUN1_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260908\M26021_Track1RUN1_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
