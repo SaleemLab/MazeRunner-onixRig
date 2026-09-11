@@ -4,7 +4,7 @@
     <NestedLayout>
       <WindowSettings Index="0">
         <NestedLayout>
-          <WindowSettings Index="15">
+          <WindowSettings Index="16">
             <Visible>false</Visible>
             <Location>
               <X>182</X>
@@ -24,7 +24,7 @@
               </TimeSeriesVisualizer>
             </VisualizerSettings>
           </WindowSettings>
-          <WindowSettings Index="16">
+          <WindowSettings Index="17">
             <Visible>false</Visible>
             <Location>
               <X>191</X>
@@ -39,7 +39,7 @@
               <ObjectTextVisualizer />
             </VisualizerSettings>
           </WindowSettings>
-          <WindowSettings Index="28">
+          <WindowSettings Index="29">
             <Location>
               <X>846</X>
               <Y>138</Y>
@@ -53,7 +53,7 @@
               <IplImageVisualizer />
             </VisualizerSettings>
           </WindowSettings>
-          <WindowSettings Index="30">
+          <WindowSettings Index="31">
             <Location>
               <X>1150</X>
               <Y>884</Y>

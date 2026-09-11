@@ -33,7 +33,7 @@
               <ObjectTextVisualizer />
             </VisualizerSettings>
           </WindowSettings>
-          <WindowSettings Index="28">
+          <WindowSettings Index="29">
             <Location>
               <X>1136</X>
               <Y>437</Y>
@@ -77,8 +77,8 @@
             <VisualizerSettings>
               <TimeSeriesVisualizer>
                 <Capacity>640</Capacity>
-                <Min>54</Min>
-                <Max>63</Max>
+                <Min>46</Min>
+                <Max>55</Max>
                 <AutoScale>true</AutoScale>
               </TimeSeriesVisualizer>
             </VisualizerSettings>
@@ -96,8 +96,8 @@
             <VisualizerSettings>
               <TimeSeriesVisualizer>
                 <Capacity>640</Capacity>
-                <Min>15399.999999999998</Min>
-                <Max>17200</Max>
+                <Min>48342</Min>
+                <Max>48343.2</Max>
                 <AutoScale>true</AutoScale>
               </TimeSeriesVisualizer>
             </VisualizerSettings>

@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "dgSpecHash": "I8aYrXzzRAw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\bonsai.core\\2.6.0\\bonsai.core.2.6.0.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\mathnet.numerics\\4.5.1\\mathnet.numerics.4.5.1.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\opentk\\1.1.1589.5942\\opentk.1.1.1589.5942.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\rx-core\\2.2.5\\rx-core.2.2.5.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\rx-interfaces\\2.2.5\\rx-interfaces.2.2.5.nupkg.sha512",
+    "C:\\Users\\Bendor Lab\\.nuget\\packages\\rx-linq\\2.2.5\\rx-linq.2.2.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Bonsai.Core 2.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "libraryId": "Bonsai.Core",
+      "targetGraphs": [
+        "netstandard2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'OpenTK 1.1.1589.5942' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "netstandard2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Rx-Core 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "libraryId": "Rx-Core",
+      "targetGraphs": [
+        "netstandard2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Rx-Interfaces 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "libraryId": "Rx-Interfaces",
+      "targetGraphs": [
+        "netstandard2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'Rx-Linq 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Bendor Lab\\Documents\\GitHub\\MazeRunner-onixRig\\VisualStimuli\\Extensions.csproj",
+      "libraryId": "Rx-Linq",
+      "targetGraphs": [
+        "netstandard2.0"
+      ]
+    }
+  ]
+}
