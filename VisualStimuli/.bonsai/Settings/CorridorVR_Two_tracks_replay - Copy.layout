@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.1">
+  <WindowSettings Index="27">
+    <NestedLayout>
+      <WindowSettings Index="46">
+        <NestedLayout>
+          <WindowSettings Index="35">
+            <Location>
+              <X>1054</X>
+              <Y>628</Y>
+            </Location>
+            <Size>
+              <Width>413</Width>
+              <Height>277</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <TimeSeriesVisualizer>
+                <Capacity>640</Capacity>
+                <Min>138.73333686340806</Min>
+                <Max>140.89163488523167</Max>
+                <AutoScale>false</AutoScale>
+              </TimeSeriesVisualizer>
+            </VisualizerSettings>
+          </WindowSettings>
+        </NestedLayout>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
+</VisualizerLayout>
