@@ -602,10 +602,10 @@ def generate():
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:Crop">
                       <cv:RegionOfInterest>
-                        <cv:X>13</cv:X>
+                        <cv:X>40</cv:X>
                         <cv:Y>4</cv:Y>
-                        <cv:Width>960</cv:Width>
-                        <cv:Height>1050</cv:Height>
+                        <cv:Width>1075</cv:Width>
+                        <cv:Height>1071</cv:Height>
                       </cv:RegionOfInterest>
                     </Combinator>
                   </Expression>

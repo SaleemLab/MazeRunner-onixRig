@@ -33,14 +33,43 @@
               <ObjectTextVisualizer />
             </VisualizerSettings>
           </WindowSettings>
-          <WindowSettings Index="29">
+          <WindowSettings Index="11">
+            <Visible>false</Visible>
             <Location>
-              <X>1136</X>
-              <Y>437</Y>
+              <X>130</X>
+              <Y>130</Y>
             </Location>
             <Size>
-              <Width>720</Width>
-              <Height>548</Height>
+              <Width>336</Width>
+              <Height>279</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <IplImageVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
+          <WindowSettings Index="12">
+            <Location>
+              <X>645</X>
+              <Y>185</Y>
+            </Location>
+            <Size>
+              <Width>336</Width>
+              <Height>279</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <IplImageVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
+          <WindowSettings Index="29">
+            <Location>
+              <X>1206</X>
+              <Y>416</Y>
+            </Location>
+            <Size>
+              <Width>650</Width>
+              <Height>569</Height>
             </Size>
             <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
             <VisualizerSettings>
@@ -64,10 +93,25 @@
           <ObjectTextVisualizer />
         </VisualizerSettings>
         <NestedLayout>
+          <WindowSettings Index="6">
+            <Visible>false</Visible>
+            <Location>
+              <X>104</X>
+              <Y>104</Y>
+            </Location>
+            <Size>
+              <Width>336</Width>
+              <Height>82</Height>
+            </Size>
+            <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+            <VisualizerSettings>
+              <ObjectTextVisualizer />
+            </VisualizerSettings>
+          </WindowSettings>
           <WindowSettings Index="14">
             <Location>
-              <X>252</X>
-              <Y>711</Y>
+              <X>142</X>
+              <Y>706</Y>
             </Location>
             <Size>
               <Width>416</Width>
@@ -77,16 +121,16 @@
             <VisualizerSettings>
               <TimeSeriesVisualizer>
                 <Capacity>640</Capacity>
-                <Min>46</Min>
-                <Max>55</Max>
+                <Min>0</Min>
+                <Max>1.1</Max>
                 <AutoScale>true</AutoScale>
               </TimeSeriesVisualizer>
             </VisualizerSettings>
           </WindowSettings>
           <WindowSettings Index="20">
             <Location>
-              <X>699</X>
-              <Y>720</Y>
+              <X>60</X>
+              <Y>255</Y>
             </Location>
             <Size>
               <Width>416</Width>
@@ -96,13 +140,31 @@
             <VisualizerSettings>
               <TimeSeriesVisualizer>
                 <Capacity>640</Capacity>
-                <Min>48342</Min>
-                <Max>48343.2</Max>
+                <Min>0</Min>
+                <Max>1.1</Max>
                 <AutoScale>true</AutoScale>
               </TimeSeriesVisualizer>
             </VisualizerSettings>
           </WindowSettings>
         </NestedLayout>
+      </WindowSettings>
+    </NestedLayout>
+  </WindowSettings>
+  <WindowSettings Index="59">
+    <NestedLayout>
+      <WindowSettings Index="9">
+        <Location>
+          <X>740</X>
+          <Y>558</Y>
+        </Location>
+        <Size>
+          <Width>336</Width>
+          <Height>65</Height>
+        </Size>
+        <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+        <VisualizerSettings>
+          <ObjectTextVisualizer />
+        </VisualizerSettings>
       </WindowSettings>
     </NestedLayout>
   </WindowSettings>
