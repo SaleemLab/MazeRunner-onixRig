@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WorkflowBuilder Version="2.9.0"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:aeon-video="clr-namespace:Aeon.Video;assembly=Aeon.Video"
                  xmlns:spk="clr-namespace:Bonsai.Spinnaker;assembly=Bonsai.Spinnaker"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
@@ -17,9 +18,22 @@
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="aeon-video:SpinnakerCapture">
+            <spk:Index xsi:nil="true" />
+            <spk:SerialNumber>18474551</spk:SerialNumber>
+            <spk:ColorProcessing>Default</spk:ColorProcessing>
+            <aeon-video:ExposureTime>10000</aeon-video:ExposureTime>
+            <aeon-video:Gain>5</aeon-video:Gain>
+            <aeon-video:Binning>1</aeon-video:Binning>
+          </Combinator>
+        </Builder>
+      </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="spk:SpinnakerCapture">
-          <spk:Index>0</spk:Index>
+          <spk:Index xsi:nil="true" />
+          <spk:SerialNumber>18474551</spk:SerialNumber>
           <spk:ColorProcessing>Default</spk:ColorProcessing>
         </Combinator>
       </Expression>
@@ -183,7 +197,7 @@
               <Combinator xsi:type="cv:BackgroundSubtraction">
                 <cv:BackgroundFrames>100</cv:BackgroundFrames>
                 <cv:AdaptationRate>0</cv:AdaptationRate>
-                <cv:ThresholdValue>35</cv:ThresholdValue>
+                <cv:ThresholdValue>100</cv:ThresholdValue>
                 <cv:ThresholdType>Binary</cv:ThresholdType>
                 <cv:SubtractionMethod>Dark</cv:SubtractionMethod>
               </Combinator>
@@ -1939,7 +1953,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2213,15 +2227,17 @@
           </Edges>
         </Workflow>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:Crop">
-          <cv:RegionOfInterest>
-            <cv:X>180</cv:X>
-            <cv:Y>34</cv:Y>
-            <cv:Width>950</cv:Width>
-            <cv:Height>950</cv:Height>
-          </cv:RegionOfInterest>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:Crop">
+            <cv:RegionOfInterest>
+              <cv:X>112</cv:X>
+              <cv:Y>12</cv:Y>
+              <cv:Width>950</cv:Width>
+              <cv:Height>950</cv:Height>
+            </cv:RegionOfInterest>
+          </Combinator>
+        </Builder>
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:BackgroundSubtraction">
@@ -2259,12 +2275,18 @@
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:Crop">
           <cv:RegionOfInterest>
-            <cv:X>180</cv:X>
-            <cv:Y>34</cv:Y>
+            <cv:X>112</cv:X>
+            <cv:Y>12</cv:Y>
             <cv:Width>950</cv:Width>
             <cv:Height>950</cv:Height>
           </cv:RegionOfInterest>
         </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timestamp" />
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:TimeInterval" />
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>AnimalPosition</Name>
@@ -2314,7 +2336,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>SleepPot</Value>
+                <Value>POST</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2322,7 +2344,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>M26020</Value>
+                <Value>M26021</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2499,7 +2521,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2686,7 +2708,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26020\20260831\M26020_SleepPot_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -3026,47 +3048,69 @@ Press Shift + T to stop camera (end experiment)</Description>
       <Expression xsi:type="MemberSelector">
         <Selector>Seconds</Selector>
       </Expression>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>Device Events</Name>
+      </Expression>
+      <Expression xsi:type="beh:Parse">
+        <harp:Register xsi:type="beh:AnalogData" />
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>AnalogInput0</Selector>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>AnalogInput1</Selector>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Encoder</Selector>
+      </Expression>
     </Nodes>
     <Edges>
-      <Edge From="0" To="2" Label="Source1" />
-      <Edge From="1" To="2" Label="Source2" />
-      <Edge From="2" To="3" Label="Source1" />
+      <Edge From="0" To="1" Label="Source1" />
+      <Edge From="1" To="3" Label="Source1" />
+      <Edge From="2" To="3" Label="Source2" />
       <Edge From="3" To="4" Label="Source1" />
       <Edge From="4" To="5" Label="Source1" />
-      <Edge From="5" To="7" Label="Source1" />
-      <Edge From="5" To="11" Label="Source1" />
-      <Edge From="5" To="16" Label="Source1" />
-      <Edge From="5" To="23" Label="Source1" />
-      <Edge From="5" To="27" Label="Source1" />
-      <Edge From="6" To="7" Label="Source2" />
-      <Edge From="7" To="8" Label="Source1" />
-      <Edge From="7" To="17" Label="Source1" />
+      <Edge From="4" To="29" Label="Source1" />
+      <Edge From="5" To="6" Label="Source1" />
+      <Edge From="6" To="8" Label="Source1" />
+      <Edge From="6" To="12" Label="Source1" />
+      <Edge From="6" To="17" Label="Source1" />
+      <Edge From="6" To="24" Label="Source1" />
+      <Edge From="6" To="28" Label="Source1" />
+      <Edge From="7" To="8" Label="Source2" />
       <Edge From="8" To="9" Label="Source1" />
+      <Edge From="8" To="18" Label="Source1" />
       <Edge From="9" To="10" Label="Source1" />
-      <Edge From="11" To="12" Label="Source1" />
+      <Edge From="10" To="11" Label="Source1" />
       <Edge From="12" To="13" Label="Source1" />
       <Edge From="13" To="14" Label="Source1" />
       <Edge From="14" To="15" Label="Source1" />
-      <Edge From="17" To="18" Label="Source1" />
+      <Edge From="15" To="16" Label="Source1" />
       <Edge From="18" To="19" Label="Source1" />
       <Edge From="19" To="20" Label="Source1" />
       <Edge From="20" To="21" Label="Source1" />
-      <Edge From="22" To="23" Label="Source2" />
-      <Edge From="23" To="24" Label="Source1" />
+      <Edge From="21" To="22" Label="Source1" />
+      <Edge From="23" To="24" Label="Source2" />
       <Edge From="24" To="25" Label="Source1" />
       <Edge From="25" To="26" Label="Source1" />
-      <Edge From="30" To="31" Label="Source1" />
-      <Edge From="31" To="32" Label="Source1" />
+      <Edge From="26" To="27" Label="Source1" />
+      <Edge From="29" To="30" Label="Source1" />
       <Edge From="33" To="34" Label="Source1" />
-      <Edge From="35" To="36" Label="Source1" />
-      <Edge From="37" To="39" Label="Source1" />
-      <Edge From="38" To="39" Label="Source2" />
-      <Edge From="40" To="41" Label="Source1" />
-      <Edge From="44" To="45" Label="Source1" />
+      <Edge From="34" To="35" Label="Source1" />
+      <Edge From="36" To="37" Label="Source1" />
+      <Edge From="38" To="39" Label="Source1" />
+      <Edge From="40" To="42" Label="Source1" />
+      <Edge From="41" To="42" Label="Source2" />
+      <Edge From="43" To="44" Label="Source1" />
       <Edge From="47" To="48" Label="Source1" />
-      <Edge From="48" To="49" Label="Source1" />
       <Edge From="50" To="51" Label="Source1" />
       <Edge From="51" To="52" Label="Source1" />
+      <Edge From="53" To="54" Label="Source1" />
+      <Edge From="54" To="55" Label="Source1" />
+      <Edge From="56" To="57" Label="Source1" />
+      <Edge From="57" To="58" Label="Source1" />
+      <Edge From="57" To="59" Label="Source1" />
+      <Edge From="57" To="60" Label="Source1" />
     </Edges>
   </Workflow>
 </WorkflowBuilder>
