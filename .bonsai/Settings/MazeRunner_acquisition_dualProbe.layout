@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="10">
+    <Visible>false</Visible>
+    <Location>
+      <X>963</X>
+      <Y>1332</Y>
+    </Location>
+    <Size>
+      <Width>416</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TimeSeriesVisualizer>
+        <Capacity>640</Capacity>
+        <Min>0</Min>
+        <Max>1.1</Max>
+        <AutoScale>true</AutoScale>
+      </TimeSeriesVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="18">
+    <Visible>false</Visible>
+    <Location>
+      <X>182</X>
+      <Y>182</Y>
+    </Location>
+    <Size>
+      <Width>656</Width>
+      <Height>519</Height>
+    </Size>
+    <WindowState>Maximized</WindowState>
+    <VisualizerTypeName>Bonsai.Ephys.Design.WaveformVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <WaveformVisualizer>
+        <ColorTheme>Light</ColorTheme>
+        <ChannelHeight>20</ChannelHeight>
+        <Timebase>2</Timebase>
+        <ColorGrouping>1</ColorGrouping>
+        <UseFixedRange>false</UseFixedRange>
+        <RangeAmplitude>0</RangeAmplitude>
+      </WaveformVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>

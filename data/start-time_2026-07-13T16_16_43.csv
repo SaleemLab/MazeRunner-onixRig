@@ -1,0 +1,1 @@
+Timestamp,Value.SystemClockHz,Value.AcquisitionClockHz,Value.MaxReadFrameSize,Value.MaxWriteFrameSize,Value.DeviceTable.Count,Value.DeviceTable.Keys.Count,Value.DeviceTable.Values.Count,Value.BlockReadSize,Value.BlockWriteSize

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="4">
+    <Visible>false</Visible>
+    <Location>
+      <X>78</X>
+      <Y>1158</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>65</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="13">
+    <Visible>false</Visible>
+    <Location>
+      <X>234</X>
+      <Y>1314</Y>
+    </Location>
+    <Size>
+      <Width>416</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TimeSeriesVisualizer>
+        <Capacity>640</Capacity>
+        <Min>0</Min>
+        <Max>1.1</Max>
+        <AutoScale>true</AutoScale>
+      </TimeSeriesVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="16">
+    <Location>
+      <X>52</X>
+      <Y>1132</Y>
+    </Location>
+    <Size>
+      <Width>416</Width>
+      <Height>279</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.Visualizers.TimeSeriesVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <TimeSeriesVisualizer>
+        <Capacity>640</Capacity>
+        <Min>54050000000</Min>
+        <Max>54450000000</Max>
+        <AutoScale>true</AutoScale>
+      </TimeSeriesVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="26">
+    <Location>
+      <X>593</X>
+      <Y>1211</Y>
+    </Location>
+    <Size>
+      <Width>758</Width>
+      <Height>862</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Ephys.Design.WaveformVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <WaveformVisualizer>
+        <ColorTheme>Light</ColorTheme>
+        <ChannelHeight>20</ChannelHeight>
+        <Timebase>2</Timebase>
+        <ColorGrouping>1</ColorGrouping>
+        <UseFixedRange>false</UseFixedRange>
+        <RangeAmplitude>0</RangeAmplitude>
+      </WaveformVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="52">
+    <Location>
+      <X>576</X>
+      <Y>1080</Y>
+    </Location>
+    <Size>
+      <Width>656</Width>
+      <Height>519</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Ephys.Design.WaveformVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <WaveformVisualizer>
+        <ColorTheme>Light</ColorTheme>
+        <ChannelHeight>20</ChannelHeight>
+        <Timebase>2</Timebase>
+        <ColorGrouping>1</ColorGrouping>
+        <UseFixedRange>false</UseFixedRange>
+        <RangeAmplitude>0</RangeAmplitude>
+      </WaveformVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="65">
+    <Visible>false</Visible>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="79">
+    <Visible>false</Visible>
+    <Location>
+      <X>381</X>
+      <Y>1379</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>304</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+  <WindowSettings Index="85">
+    <Visible>false</Visible>
+    <Location>
+      <X>26</X>
+      <Y>1106</Y>
+    </Location>
+    <Size>
+      <Width>336</Width>
+      <Height>65</Height>
+    </Size>
+    <VisualizerTypeName>Bonsai.Design.ObjectTextVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <ObjectTextVisualizer />
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>

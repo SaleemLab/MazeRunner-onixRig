@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualizerLayout Version="2.9.0">
+  <WindowSettings Index="22">
+    <Visible>false</Visible>
+    <Location>
+      <X>324</X>
+      <Y>120</Y>
+    </Location>
+    <Size>
+      <Width>656</Width>
+      <Height>519</Height>
+    </Size>
+    <WindowState>Maximized</WindowState>
+    <VisualizerTypeName>Bonsai.Ephys.Design.WaveformVisualizer</VisualizerTypeName>
+    <VisualizerSettings>
+      <WaveformVisualizer>
+        <ColorTheme>Light</ColorTheme>
+        <ChannelHeight>5</ChannelHeight>
+        <Timebase>2</Timebase>
+        <ColorGrouping>1</ColorGrouping>
+        <UseFixedRange>false</UseFixedRange>
+        <RangeAmplitude>0</RangeAmplitude>
+      </WaveformVisualizer>
+    </VisualizerSettings>
+  </WindowSettings>
+</VisualizerLayout>
