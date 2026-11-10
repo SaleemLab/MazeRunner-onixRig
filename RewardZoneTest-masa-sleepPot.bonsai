@@ -18,24 +18,24 @@
                  xmlns="https://bonsai-rx.org/2018/workflow">
   <Workflow>
     <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="aeon-video:SpinnakerCapture">
+          <spk:Index xsi:nil="true" />
+          <spk:SerialNumber>26312602</spk:SerialNumber>
+          <spk:ColorProcessing>Default</spk:ColorProcessing>
+          <aeon-video:ExposureTime>15000</aeon-video:ExposureTime>
+          <aeon-video:Gain>17</aeon-video:Gain>
+          <aeon-video:Binning>1</aeon-video:Binning>
+        </Combinator>
+      </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
-          <Combinator xsi:type="aeon-video:SpinnakerCapture">
+          <Combinator xsi:type="spk:SpinnakerCapture">
             <spk:Index xsi:nil="true" />
             <spk:SerialNumber>18474551</spk:SerialNumber>
             <spk:ColorProcessing>Default</spk:ColorProcessing>
-            <aeon-video:ExposureTime>10000</aeon-video:ExposureTime>
-            <aeon-video:Gain>5</aeon-video:Gain>
-            <aeon-video:Binning>1</aeon-video:Binning>
           </Combinator>
         </Builder>
-      </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="spk:SpinnakerCapture">
-          <spk:Index xsi:nil="true" />
-          <spk:SerialNumber>18474551</spk:SerialNumber>
-          <spk:ColorProcessing>Default</spk:ColorProcessing>
-        </Combinator>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>StartExperiment</Name>
@@ -197,7 +197,7 @@
               <Combinator xsi:type="cv:BackgroundSubtraction">
                 <cv:BackgroundFrames>100</cv:BackgroundFrames>
                 <cv:AdaptationRate>0</cv:AdaptationRate>
-                <cv:ThresholdValue>100</cv:ThresholdValue>
+                <cv:ThresholdValue>110</cv:ThresholdValue>
                 <cv:ThresholdType>Binary</cv:ThresholdType>
                 <cv:SubtractionMethod>Dark</cv:SubtractionMethod>
               </Combinator>
@@ -1953,7 +1953,7 @@
                     <Name>PumpTrigger1</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_Pump.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_0_1_PRESleep\M26033_20261110_0_1_PRESleep_Pump.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -2326,6 +2326,7 @@
         <Property Name="StimulusID" Category="Filename" />
         <Property Name="MouseID" Category="Filename" />
         <Property Name="SavingDirBase" Category="Filename" />
+        <Property Name="SessionID" Category="Filename" />
       </Expression>
       <Expression xsi:type="GroupWorkflow">
         <Name>Generate File Names</Name>
@@ -2336,7 +2337,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>POST</Value>
+                <Value>PRESleep</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2344,7 +2345,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>M26021</Value>
+                <Value>M26033</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -2358,12 +2359,20 @@
             <Expression xsi:type="SubscribeSubject">
               <Name>DateDir</Name>
             </Expression>
+            <Expression xsi:type="ExternalizedMapping">
+              <Property Name="Value" DisplayName="SessionID" />
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="StringProperty">
+                <Value>0_1</Value>
+              </Combinator>
+            </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Zip" />
             </Expression>
             <Expression xsi:type="Format">
-              <Format>{2}\Data\{1}\{3}\{1}_{0}</Format>
-              <Selector>Item1,Item2,Item3,Item4</Selector>
+              <Format>{2}\Data\{1}\{3}\{1}_{3}_{4}_{0}\{1}_{3}_{4}_{0}</Format>
+              <Selector>Item1,Item2,Item3,Item4,Item5</Selector>
             </Expression>
             <Expression xsi:type="rx:BehaviorSubject">
               <Name>FilenamePrefix</Name>
@@ -2419,25 +2428,27 @@ def generate():
           </Nodes>
           <Edges>
             <Edge From="0" To="1" Label="Source1" />
-            <Edge From="1" To="7" Label="Source1" />
+            <Edge From="1" To="9" Label="Source1" />
             <Edge From="2" To="3" Label="Source1" />
-            <Edge From="3" To="7" Label="Source2" />
+            <Edge From="3" To="9" Label="Source2" />
             <Edge From="4" To="5" Label="Source1" />
-            <Edge From="5" To="7" Label="Source3" />
-            <Edge From="6" To="7" Label="Source4" />
+            <Edge From="5" To="9" Label="Source3" />
+            <Edge From="6" To="9" Label="Source4" />
             <Edge From="7" To="8" Label="Source1" />
-            <Edge From="8" To="9" Label="Source1" />
+            <Edge From="8" To="9" Label="Source5" />
+            <Edge From="9" To="10" Label="Source1" />
             <Edge From="10" To="11" Label="Source1" />
-            <Edge From="10" To="13" Label="Source1" />
-            <Edge From="10" To="15" Label="Source1" />
-            <Edge From="10" To="17" Label="Source1" />
-            <Edge From="10" To="19" Label="Source1" />
-            <Edge From="11" To="12" Label="Source1" />
+            <Edge From="12" To="13" Label="Source1" />
+            <Edge From="12" To="15" Label="Source1" />
+            <Edge From="12" To="17" Label="Source1" />
+            <Edge From="12" To="19" Label="Source1" />
+            <Edge From="12" To="21" Label="Source1" />
             <Edge From="13" To="14" Label="Source1" />
             <Edge From="15" To="16" Label="Source1" />
             <Edge From="17" To="18" Label="Source1" />
             <Edge From="19" To="20" Label="Source1" />
             <Edge From="21" To="22" Label="Source1" />
+            <Edge From="23" To="24" Label="Source1" />
           </Edges>
         </Workflow>
       </Expression>
@@ -2521,7 +2532,7 @@ def generate():
                     <Name>BehaviourLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_BehaviourLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261105\M26033_20261105_0_1_PRESleep\M26033_20261105_0_1_PRESleep_BehaviourLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -2708,7 +2719,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260909\M26021_Rest_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261105\M26033_20261105_0_1_PRESleep\M26033_20261105_0_1_PRESleep_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>

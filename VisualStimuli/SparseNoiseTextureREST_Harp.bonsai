@@ -1168,9 +1168,10 @@
         <Name>DrawQuad</Name>
       </Expression>
       <Expression xsi:type="ExternalizedMapping">
-        <Property Name="StimulusID" Category="Filename" />
-        <Property Name="MouseID" Category="Filename" />
-        <Property Name="SavingDirBase" Category="Filename" />
+        <Property Name="StimulusID" />
+        <Property Name="MouseID" />
+        <Property Name="SavingDirBase" />
+        <Property Name="SessionID" />
       </Expression>
       <Expression xsi:type="GroupWorkflow">
         <Name>Generate File Names</Name>
@@ -1181,7 +1182,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>POST3Sleep_VR</Value>
+                <Value>POSTSleep_VR</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -1189,7 +1190,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>M26021</Value>
+                <Value>M26034</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="ExternalizedMapping">
@@ -1203,12 +1204,20 @@
             <Expression xsi:type="SubscribeSubject">
               <Name>DateDir</Name>
             </Expression>
+            <Expression xsi:type="ExternalizedMapping">
+              <Property Name="Value" DisplayName="SessionID" />
+            </Expression>
+            <Expression xsi:type="Combinator">
+              <Combinator xsi:type="StringProperty">
+                <Value>2_3</Value>
+              </Combinator>
+            </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Zip" />
             </Expression>
             <Expression xsi:type="Format">
-              <Format>{2}\Data\{1}\{3}\{0}_{1}</Format>
-              <Selector>Item1,Item2,Item3,Item4</Selector>
+              <Format>{2}\Data\{1}\{3}\{1}_{3}_{4}_{0}\{1}_{3}_{4}_{0}</Format>
+              <Selector>Item1,Item2,Item3,Item4,Item5</Selector>
             </Expression>
             <Expression xsi:type="rx:BehaviorSubject">
               <Name>FilenamePrefix</Name>
@@ -1278,22 +1287,23 @@ def generate():
           </Nodes>
           <Edges>
             <Edge From="0" To="1" Label="Source1" />
-            <Edge From="1" To="7" Label="Source1" />
+            <Edge From="1" To="9" Label="Source1" />
             <Edge From="2" To="3" Label="Source1" />
-            <Edge From="3" To="7" Label="Source2" />
+            <Edge From="3" To="9" Label="Source2" />
             <Edge From="4" To="5" Label="Source1" />
-            <Edge From="5" To="7" Label="Source3" />
-            <Edge From="6" To="7" Label="Source4" />
+            <Edge From="5" To="9" Label="Source3" />
+            <Edge From="6" To="9" Label="Source4" />
             <Edge From="7" To="8" Label="Source1" />
-            <Edge From="8" To="9" Label="Source1" />
+            <Edge From="8" To="9" Label="Source5" />
+            <Edge From="9" To="10" Label="Source1" />
             <Edge From="10" To="11" Label="Source1" />
-            <Edge From="10" To="13" Label="Source1" />
-            <Edge From="10" To="15" Label="Source1" />
-            <Edge From="10" To="17" Label="Source1" />
-            <Edge From="10" To="19" Label="Source1" />
-            <Edge From="10" To="21" Label="Source1" />
-            <Edge From="10" To="23" Label="Source1" />
-            <Edge From="11" To="12" Label="Source1" />
+            <Edge From="12" To="13" Label="Source1" />
+            <Edge From="12" To="15" Label="Source1" />
+            <Edge From="12" To="17" Label="Source1" />
+            <Edge From="12" To="19" Label="Source1" />
+            <Edge From="12" To="21" Label="Source1" />
+            <Edge From="12" To="23" Label="Source1" />
+            <Edge From="12" To="25" Label="Source1" />
             <Edge From="13" To="14" Label="Source1" />
             <Edge From="15" To="16" Label="Source1" />
             <Edge From="17" To="18" Label="Source1" />
@@ -1301,6 +1311,7 @@ def generate():
             <Edge From="21" To="22" Label="Source1" />
             <Edge From="23" To="24" Label="Source1" />
             <Edge From="25" To="26" Label="Source1" />
+            <Edge From="27" To="28" Label="Source1" />
           </Edges>
         </Workflow>
       </Expression>
@@ -1331,7 +1342,7 @@ def generate():
                     <Name>VideoLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260917\POST2Sleep_VR_M26021_Video.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26034\20261028\M26034_20261028_0_0_PRE_Video.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -1378,10 +1389,10 @@ def generate():
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:Crop">
                       <cv:RegionOfInterest>
-                        <cv:X>40</cv:X>
-                        <cv:Y>4</cv:Y>
-                        <cv:Width>1075</cv:Width>
-                        <cv:Height>1071</cv:Height>
+                        <cv:X>109</cv:X>
+                        <cv:Y>6</cv:Y>
+                        <cv:Width>774</cv:Width>
+                        <cv:Height>1074</cv:Height>
                       </cv:RegionOfInterest>
                     </Combinator>
                   </Expression>
@@ -1440,7 +1451,7 @@ def generate():
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260917\POST2Sleep_VR_M26021_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26034\20261028\M26034_20261028_0_0_PRE_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -1459,6 +1470,16 @@ def generate():
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="rx:TimeInterval" />
                   </Expression>
+                  <Expression xsi:type="Combinator">
+                    <Combinator xsi:type="cv:Crop">
+                      <cv:RegionOfInterest>
+                        <cv:X>387</cv:X>
+                        <cv:Y>296</cv:Y>
+                        <cv:Width>80</cv:Width>
+                        <cv:Height>76</cv:Height>
+                      </cv:RegionOfInterest>
+                    </Combinator>
+                  </Expression>
                 </Nodes>
                 <Edges>
                   <Edge From="0" To="1" Label="Source1" />
@@ -1473,6 +1494,7 @@ def generate():
                   <Edge From="10" To="11" Label="Source1" />
                   <Edge From="11" To="12" Label="Source1" />
                   <Edge From="12" To="13" Label="Source1" />
+                  <Edge From="12" To="32" Label="Source1" />
                   <Edge From="13" To="14" Label="Source1" />
                   <Edge From="13" To="29" Label="Source1" />
                   <Edge From="13" To="30" Label="Source1" />
@@ -1625,7 +1647,7 @@ def generate():
                     <Name>PDLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260917\POST2Sleep_VR_M26021_PDLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26034\20261028\M26034_20261028_0_0_PRE_PDLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -1713,7 +1735,7 @@ def generate():
                     <Name>PeripheralLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26021\20260917\POST2Sleep_VR_M26021_PeripheralLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26034\20261028\M26034_20261028_0_0_PRE_PeripheralLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
