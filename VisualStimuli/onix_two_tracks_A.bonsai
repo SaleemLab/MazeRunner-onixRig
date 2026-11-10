@@ -121,7 +121,7 @@
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>Circle_horBar_white_50contrast</gl:Name>
+                    <gl:Name>135Grat_6_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -129,20 +129,7 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\Circle_horBar_white_50contrast.png</gl:FileName>
-                    <gl:ColorType>Unchanged</gl:ColorType>
-                    <gl:FlipMode>Vertical</gl:FlipMode>
-                  </gl:TextureConfiguration>
-                  <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>white bar__50contrast</gl:Name>
-                    <gl:Width xsi:nil="true" />
-                    <gl:Height xsi:nil="true" />
-                    <gl:InternalFormat>Rgba</gl:InternalFormat>
-                    <gl:WrapS>Repeat</gl:WrapS>
-                    <gl:WrapT>Repeat</gl:WrapT>
-                    <gl:MinFilter>Linear</gl:MinFilter>
-                    <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\white bar__50contrast.jpg</gl:FileName>
+                    <gl:FileName>Textures\onix\135Grat_6_50contrast.jpg</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
@@ -160,7 +147,7 @@
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>brick_white_6_rows_clean_50contrast</gl:Name>
+                    <gl:Name>135Grat_1_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -168,12 +155,12 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\brick_white_6_rows_clean_50contrast.png</gl:FileName>
+                    <gl:FileName>Textures\onix\135Grat_1_50contrast.jpg</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>big_triangle_outline_white_50contrast</gl:Name>
+                    <gl:Name>Circle_horBar_white_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -181,12 +168,12 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\big_triangle_outline_white_50contrast.png</gl:FileName>
+                    <gl:FileName>Textures\onix\Circle_horBar_white_50contrast.png</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>45Grat_1_50contrast</gl:Name>
+                    <gl:Name>big_triangle_outline_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -194,7 +181,20 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\45Grat_1_50contrast.jpg</gl:FileName>
+                    <gl:FileName>Textures\onix\big_triangle_outline_50contrast.png</gl:FileName>
+                    <gl:ColorType>Unchanged</gl:ColorType>
+                    <gl:FlipMode>Vertical</gl:FlipMode>
+                  </gl:TextureConfiguration>
+                  <gl:TextureConfiguration xsi:type="gl:ImageTexture">
+                    <gl:Name>big_triangle_white_50contrast</gl:Name>
+                    <gl:Width xsi:nil="true" />
+                    <gl:Height xsi:nil="true" />
+                    <gl:InternalFormat>Rgba</gl:InternalFormat>
+                    <gl:WrapS>Repeat</gl:WrapS>
+                    <gl:WrapT>Repeat</gl:WrapT>
+                    <gl:MinFilter>Linear</gl:MinFilter>
+                    <gl:MagFilter>Linear</gl:MagFilter>
+                    <gl:FileName>Textures\onix\big_triangle_white_50contrast.png</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
@@ -212,7 +212,7 @@
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>VertGrat_6_50contrast</gl:Name>
+                    <gl:Name>brick_white_6_rows_clean_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -220,12 +220,12 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\VertGrat_6_50contrast.jpg</gl:FileName>
+                    <gl:FileName>Textures\onix\brick_white_6_rows_clean_50contrast.png</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
                   <gl:TextureConfiguration xsi:type="gl:ImageTexture">
-                    <gl:Name>big_triangle_outline_50contrast</gl:Name>
+                    <gl:Name>VertGrat_12_50contrast</gl:Name>
                     <gl:Width xsi:nil="true" />
                     <gl:Height xsi:nil="true" />
                     <gl:InternalFormat>Rgba</gl:InternalFormat>
@@ -233,7 +233,33 @@
                     <gl:WrapT>Repeat</gl:WrapT>
                     <gl:MinFilter>Linear</gl:MinFilter>
                     <gl:MagFilter>Linear</gl:MagFilter>
-                    <gl:FileName>Textures\onix\big_triangle_outline_50contrast.png</gl:FileName>
+                    <gl:FileName>Textures\onix\VertGrat_12_50contrast.jpg</gl:FileName>
+                    <gl:ColorType>Unchanged</gl:ColorType>
+                    <gl:FlipMode>Vertical</gl:FlipMode>
+                  </gl:TextureConfiguration>
+                  <gl:TextureConfiguration xsi:type="gl:ImageTexture">
+                    <gl:Name>lm_dots</gl:Name>
+                    <gl:Width xsi:nil="true" />
+                    <gl:Height xsi:nil="true" />
+                    <gl:InternalFormat>Rgba</gl:InternalFormat>
+                    <gl:WrapS>Repeat</gl:WrapS>
+                    <gl:WrapT>Repeat</gl:WrapT>
+                    <gl:MinFilter>Linear</gl:MinFilter>
+                    <gl:MagFilter>Linear</gl:MagFilter>
+                    <gl:FileName>Textures\landmarks12\lm_dots.png</gl:FileName>
+                    <gl:ColorType>Unchanged</gl:ColorType>
+                    <gl:FlipMode>Vertical</gl:FlipMode>
+                  </gl:TextureConfiguration>
+                  <gl:TextureConfiguration xsi:type="gl:ImageTexture">
+                    <gl:Name>white bar__50contrast</gl:Name>
+                    <gl:Width xsi:nil="true" />
+                    <gl:Height xsi:nil="true" />
+                    <gl:InternalFormat>Rgba</gl:InternalFormat>
+                    <gl:WrapS>Repeat</gl:WrapS>
+                    <gl:WrapT>Repeat</gl:WrapT>
+                    <gl:MinFilter>Linear</gl:MinFilter>
+                    <gl:MagFilter>Linear</gl:MagFilter>
+                    <gl:FileName>Textures\onix\white bar__50contrast.jpg</gl:FileName>
                     <gl:ColorType>Unchanged</gl:ColorType>
                     <gl:FlipMode>Vertical</gl:FlipMode>
                   </gl:TextureConfiguration>
@@ -454,11 +480,11 @@
               <Workflow>
                 <Nodes>
                   <Expression xsi:type="GroupWorkflow">
-                    <Name>Track 1A</Name>
+                    <Name>Track 1</Name>
                     <Workflow>
                       <Nodes>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>Track 1A Main Room</Name>
+                          <Name>Track 1 Main Room</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -1090,7 +1116,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T2 @ 50 cm (Circle_horBar_white_50contrast)</Name>
+                          <Name>T2 @ 50 cm (135Grat_6_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -1108,150 +1134,6 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
-                                <Name>Floor</Name>
-                                <Workflow>
-                                  <Nodes>
-                                    <Expression xsi:type="SubscribeSubject">
-                                      <Name>Draw3DStim</Name>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TextureName" />
-                                    </Expression>
-                                    <Expression xsi:type="Combinator">
-                                      <Combinator xsi:type="gl:BindTexture">
-                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
-                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
-                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
-                                      </Combinator>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TranslationZ" />
-                                      <Property Name="TranslationX" />
-                                      <Property Name="TranslationY" />
-                                      <Property Name="RotationZ" />
-                                      <Property Name="RotationY" />
-                                      <Property Name="RotationX" />
-                                      <Property Name="ScaleX" />
-                                      <Property Name="ScaleY" />
-                                    </Expression>
-                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
-                                      <TranslationX>0</TranslationX>
-                                      <TranslationY>-1.98</TranslationY>
-                                      <TranslationZ>0</TranslationZ>
-                                      <RotationZ>0</RotationZ>
-                                      <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
-                                      <ScaleX>10</ScaleX>
-                                      <ScaleY>10</ScaleY>
-                                      <ScaleZ>8</ScaleZ>
-                                      <Ambient>
-                                        <X>0.5</X>
-                                        <Y>0.5</Y>
-                                        <Z>0.5</Z>
-                                      </Ambient>
-                                      <Diffuse>
-                                        <X>0</X>
-                                        <Y>0</Y>
-                                        <Z>0</Z>
-                                      </Diffuse>
-                                      <Specular>
-                                        <X>1</X>
-                                        <Y>1</Y>
-                                        <Z>1</Z>
-                                      </Specular>
-                                      <SpecularExponent>10</SpecularExponent>
-                                      <MeshName>Plane</MeshName>
-                                    </Expression>
-                                    <Expression xsi:type="WorkflowOutput" />
-                                  </Nodes>
-                                  <Edges>
-                                    <Edge From="0" To="2" Label="Source1" />
-                                    <Edge From="1" To="2" Label="Source2" />
-                                    <Edge From="2" To="4" Label="Source1" />
-                                    <Edge From="3" To="4" Label="Source2" />
-                                    <Edge From="4" To="5" Label="Source1" />
-                                  </Edges>
-                                </Workflow>
-                              </Expression>
-                              <Expression xsi:type="PropertyMapping">
-                                <PropertyMappings>
-                                  <Property Name="TranslationZ" />
-                                </PropertyMappings>
-                              </Expression>
-                              <Expression xsi:type="GroupWorkflow">
-                                <Name>Right</Name>
-                                <Workflow>
-                                  <Nodes>
-                                    <Expression xsi:type="SubscribeSubject">
-                                      <Name>Draw3DStim</Name>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TextureName" />
-                                    </Expression>
-                                    <Expression xsi:type="Combinator">
-                                      <Combinator xsi:type="gl:BindTexture">
-                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
-                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
-                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
-                                      </Combinator>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TranslationZ" />
-                                      <Property Name="TranslationX" />
-                                      <Property Name="TranslationY" />
-                                      <Property Name="RotationZ" />
-                                      <Property Name="RotationY" />
-                                      <Property Name="RotationX" />
-                                      <Property Name="ScaleX" />
-                                      <Property Name="ScaleY" />
-                                    </Expression>
-                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
-                                      <TranslationX>4.98</TranslationX>
-                                      <TranslationY>3</TranslationY>
-                                      <TranslationZ>0</TranslationZ>
-                                      <RotationZ>0</RotationZ>
-                                      <RotationY>90</RotationY>
-                                      <RotationX>0</RotationX>
-                                      <ScaleX>10</ScaleX>
-                                      <ScaleY>10</ScaleY>
-                                      <ScaleZ>8</ScaleZ>
-                                      <Ambient>
-                                        <X>0.5</X>
-                                        <Y>0.5</Y>
-                                        <Z>0.5</Z>
-                                      </Ambient>
-                                      <Diffuse>
-                                        <X>0</X>
-                                        <Y>0</Y>
-                                        <Z>0</Z>
-                                      </Diffuse>
-                                      <Specular>
-                                        <X>1</X>
-                                        <Y>1</Y>
-                                        <Z>1</Z>
-                                      </Specular>
-                                      <SpecularExponent>10</SpecularExponent>
-                                      <MeshName>Plane</MeshName>
-                                    </Expression>
-                                    <Expression xsi:type="WorkflowOutput" />
-                                  </Nodes>
-                                  <Edges>
-                                    <Edge From="0" To="2" Label="Source1" />
-                                    <Edge From="1" To="2" Label="Source2" />
-                                    <Edge From="2" To="4" Label="Source1" />
-                                    <Edge From="3" To="4" Label="Source2" />
-                                    <Edge From="4" To="5" Label="Source1" />
-                                  </Edges>
-                                </Workflow>
-                              </Expression>
-                              <Expression xsi:type="PropertyMapping">
-                                <PropertyMappings>
-                                  <Property Name="TranslationZ" />
-                                </PropertyMappings>
-                              </Expression>
-                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Ceil</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1265,7 +1147,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>135Grat_6_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1324,6 +1206,150 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
+                                <Name>Floor</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>135Grat_6_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>-1.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Right</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>135Grat_6_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>4.98</TranslationX>
+                                      <TranslationY>3</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>0</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Left</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1337,7 +1363,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>135Grat_6_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1356,7 +1382,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -1406,7 +1432,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T3 @ 70 cm (white bar__50contrast)</Name>
+                          <Name>T3 @ 70 cm (big_triangle_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -1424,6 +1450,78 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
+                                <Name>Ceil</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>7.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Floor</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1437,7 +1535,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1509,7 +1607,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1568,78 +1666,6 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
-                                <Name>Ceil</Name>
-                                <Workflow>
-                                  <Nodes>
-                                    <Expression xsi:type="SubscribeSubject">
-                                      <Name>Draw3DStim</Name>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TextureName" />
-                                    </Expression>
-                                    <Expression xsi:type="Combinator">
-                                      <Combinator xsi:type="gl:BindTexture">
-                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
-                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
-                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
-                                      </Combinator>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TranslationZ" />
-                                      <Property Name="TranslationX" />
-                                      <Property Name="TranslationY" />
-                                      <Property Name="RotationZ" />
-                                      <Property Name="RotationY" />
-                                      <Property Name="RotationX" />
-                                      <Property Name="ScaleX" />
-                                      <Property Name="ScaleY" />
-                                    </Expression>
-                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
-                                      <TranslationX>0</TranslationX>
-                                      <TranslationY>7.98</TranslationY>
-                                      <TranslationZ>0</TranslationZ>
-                                      <RotationZ>0</RotationZ>
-                                      <RotationY>90</RotationY>
-                                      <RotationX>-90</RotationX>
-                                      <ScaleX>10</ScaleX>
-                                      <ScaleY>10</ScaleY>
-                                      <ScaleZ>8</ScaleZ>
-                                      <Ambient>
-                                        <X>0.5</X>
-                                        <Y>0.5</Y>
-                                        <Z>0.5</Z>
-                                      </Ambient>
-                                      <Diffuse>
-                                        <X>0</X>
-                                        <Y>0</Y>
-                                        <Z>0</Z>
-                                      </Diffuse>
-                                      <Specular>
-                                        <X>1</X>
-                                        <Y>1</Y>
-                                        <Z>1</Z>
-                                      </Specular>
-                                      <SpecularExponent>10</SpecularExponent>
-                                      <MeshName>Plane</MeshName>
-                                    </Expression>
-                                    <Expression xsi:type="WorkflowOutput" />
-                                  </Nodes>
-                                  <Edges>
-                                    <Edge From="0" To="2" Label="Source1" />
-                                    <Edge From="1" To="2" Label="Source2" />
-                                    <Edge From="2" To="4" Label="Source1" />
-                                    <Edge From="3" To="4" Label="Source2" />
-                                    <Edge From="4" To="5" Label="Source1" />
-                                  </Edges>
-                                </Workflow>
-                              </Expression>
-                              <Expression xsi:type="PropertyMapping">
-                                <PropertyMappings>
-                                  <Property Name="TranslationZ" />
-                                </PropertyMappings>
-                              </Expression>
-                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Left</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1653,7 +1679,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1722,7 +1748,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T4 @ 90 cm (big_triangle_50contrast)</Name>
+                          <Name>T4 @ 90 cm (135Grat_1_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -1740,6 +1766,78 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
+                                <Name>Ceil</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>135Grat_1_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>7.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Floor</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1753,7 +1851,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
+                                        <gl:TextureName>135Grat_1_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1825,7 +1923,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
+                                        <gl:TextureName>135Grat_1_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1884,78 +1982,6 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
-                                <Name>Ceil</Name>
-                                <Workflow>
-                                  <Nodes>
-                                    <Expression xsi:type="SubscribeSubject">
-                                      <Name>Draw3DStim</Name>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TextureName" />
-                                    </Expression>
-                                    <Expression xsi:type="Combinator">
-                                      <Combinator xsi:type="gl:BindTexture">
-                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
-                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
-                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
-                                      </Combinator>
-                                    </Expression>
-                                    <Expression xsi:type="ExternalizedMapping">
-                                      <Property Name="TranslationZ" />
-                                      <Property Name="TranslationX" />
-                                      <Property Name="TranslationY" />
-                                      <Property Name="RotationZ" />
-                                      <Property Name="RotationY" />
-                                      <Property Name="RotationX" />
-                                      <Property Name="ScaleX" />
-                                      <Property Name="ScaleY" />
-                                    </Expression>
-                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
-                                      <TranslationX>0</TranslationX>
-                                      <TranslationY>7.98</TranslationY>
-                                      <TranslationZ>0</TranslationZ>
-                                      <RotationZ>0</RotationZ>
-                                      <RotationY>90</RotationY>
-                                      <RotationX>-90</RotationX>
-                                      <ScaleX>10</ScaleX>
-                                      <ScaleY>10</ScaleY>
-                                      <ScaleZ>0</ScaleZ>
-                                      <Ambient>
-                                        <X>0.5</X>
-                                        <Y>0.5</Y>
-                                        <Z>0.5</Z>
-                                      </Ambient>
-                                      <Diffuse>
-                                        <X>0</X>
-                                        <Y>0</Y>
-                                        <Z>0</Z>
-                                      </Diffuse>
-                                      <Specular>
-                                        <X>1</X>
-                                        <Y>1</Y>
-                                        <Z>1</Z>
-                                      </Specular>
-                                      <SpecularExponent>10</SpecularExponent>
-                                      <MeshName>Plane</MeshName>
-                                    </Expression>
-                                    <Expression xsi:type="WorkflowOutput" />
-                                  </Nodes>
-                                  <Edges>
-                                    <Edge From="0" To="2" Label="Source1" />
-                                    <Edge From="1" To="2" Label="Source2" />
-                                    <Edge From="2" To="4" Label="Source1" />
-                                    <Edge From="3" To="4" Label="Source2" />
-                                    <Edge From="4" To="5" Label="Source1" />
-                                  </Edges>
-                                </Workflow>
-                              </Expression>
-                              <Expression xsi:type="PropertyMapping">
-                                <PropertyMappings>
-                                  <Property Name="TranslationZ" />
-                                </PropertyMappings>
-                              </Expression>
-                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Left</Name>
                                 <Workflow>
                                   <Nodes>
@@ -1969,7 +1995,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_50contrast</gl:TextureName>
+                                        <gl:TextureName>135Grat_1_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -1988,11 +2014,11 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
-                                      <ScaleZ>0</ScaleZ>
+                                      <ScaleZ>8</ScaleZ>
                                       <Ambient>
                                         <X>0.5</X>
                                         <Y>0.5</Y>
@@ -2038,7 +2064,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T5 @ 110 cm (brick_white_6_rows_clean_50contrast)</Name>
+                          <Name>T5 @ 110 cm (Circle_horBar_white_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -2049,6 +2075,78 @@
                               </Expression>
                               <Expression xsi:type="scr:ExpressionTransform">
                                 <scr:Expression>it-110</scr:Expression>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Ceil</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>7.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
                               </Expression>
                               <Expression xsi:type="PropertyMapping">
                                 <PropertyMappings>
@@ -2069,7 +2167,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2141,7 +2239,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2200,6 +2298,106 @@
                                 </PropertyMappings>
                               </Expression>
                               <Expression xsi:type="GroupWorkflow">
+                                <Name>Left</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>Circle_horBar_white_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>-4.98</TranslationX>
+                                      <TranslationY>3</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>0</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                            </Nodes>
+                            <Edges>
+                              <Edge From="0" To="2" Label="Source1" />
+                              <Edge From="1" To="2" Label="Source2" />
+                              <Edge From="2" To="3" Label="Source1" />
+                              <Edge From="3" To="4" Label="Source1" />
+                              <Edge From="2" To="5" Label="Source1" />
+                              <Edge From="5" To="6" Label="Source1" />
+                              <Edge From="2" To="7" Label="Source1" />
+                              <Edge From="7" To="8" Label="Source1" />
+                              <Edge From="2" To="9" Label="Source1" />
+                              <Edge From="9" To="10" Label="Source1" />
+                            </Edges>
+                          </Workflow>
+                        </Expression>
+                        <Expression xsi:type="GroupWorkflow">
+                          <Name>T6 @ 130 cm (big_triangle_outline_50contrast)</Name>
+                          <Workflow>
+                            <Nodes>
+                              <Expression xsi:type="SubscribeSubject">
+                                <Name>MousePos</Name>
+                              </Expression>
+                              <Expression xsi:type="ExternalizedMapping">
+                                <Property Name="Expression" />
+                              </Expression>
+                              <Expression xsi:type="scr:ExpressionTransform">
+                                <scr:Expression>it-130</scr:Expression>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
                                 <Name>Ceil</Name>
                                 <Workflow>
                                   <Nodes>
@@ -2213,7 +2411,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2236,7 +2434,151 @@
                                       <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
-                                      <ScaleZ>0</ScaleZ>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Floor</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>-1.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Right</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>4.98</TranslationX>
+                                      <TranslationY>3</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>0</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
                                       <Ambient>
                                         <X>0.5</X>
                                         <Y>0.5</Y>
@@ -2285,7 +2627,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2308,7 +2650,7 @@
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
-                                      <ScaleZ>0</ScaleZ>
+                                      <ScaleZ>8</ScaleZ>
                                       <Ambient>
                                         <X>0.5</X>
                                         <Y>0.5</Y>
@@ -2392,11 +2734,11 @@
                     <Combinator xsi:type="rx:SubscribeWhen" />
                   </Expression>
                   <Expression xsi:type="GroupWorkflow">
-                    <Name>Track 2A</Name>
+                    <Name>Track 2</Name>
                     <Workflow>
                       <Nodes>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>Track 2A Main Room</Name>
+                          <Name>Track 2 Main Room</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -2712,7 +3054,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T1 @ 30 cm (big_triangle_outline_white_50contrast)</Name>
+                          <Name>T1 @ 30 cm (big_triangle_white_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -2743,7 +3085,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2763,7 +3105,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -2815,7 +3157,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2835,7 +3177,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -2887,7 +3229,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -2906,7 +3248,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -2959,7 +3301,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_white_50contrast</gl:TextureName>
+                                        <gl:TextureName>big_triangle_white_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3028,7 +3370,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T2 @ 50 cm (45Grat_1_50contrast)</Name>
+                          <Name>T2 @ 50 cm (Circle_horBar_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -3059,7 +3401,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>45Grat_1_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3079,7 +3421,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3131,7 +3473,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>45Grat_1_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3151,7 +3493,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3203,7 +3545,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>45Grat_1_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3222,7 +3564,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -3275,7 +3617,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>45Grat_1_50contrast</gl:TextureName>
+                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3344,7 +3686,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T3 @ 70 cm (Circle_horBar_50contrast)</Name>
+                          <Name>T3 @ 70 cm (brick_white_6_rows_clean_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -3375,7 +3717,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
+                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3395,7 +3737,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3447,7 +3789,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
+                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3467,7 +3809,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3519,7 +3861,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
+                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3538,7 +3880,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -3591,7 +3933,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>Circle_horBar_50contrast</gl:TextureName>
+                                        <gl:TextureName>brick_white_6_rows_clean_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3660,7 +4002,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T4 @ 90 cm (VertGrat_6_50contrast)</Name>
+                          <Name>T4 @ 90 cm (VertGrat_12_50contrast)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -3691,7 +4033,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>VertGrat_6_50contrast</gl:TextureName>
+                                        <gl:TextureName>VertGrat_12_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3711,7 +4053,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3763,7 +4105,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>VertGrat_6_50contrast</gl:TextureName>
+                                        <gl:TextureName>VertGrat_12_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3783,7 +4125,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -3835,7 +4177,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>VertGrat_6_50contrast</gl:TextureName>
+                                        <gl:TextureName>VertGrat_12_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3854,7 +4196,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -3907,7 +4249,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>VertGrat_6_50contrast</gl:TextureName>
+                                        <gl:TextureName>VertGrat_12_50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -3976,7 +4318,7 @@
                           </Workflow>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
-                          <Name>T5 @ 110 cm (big_triangle_outline_50contrast)</Name>
+                          <Name>T5 @ 110 cm (lm_dots)</Name>
                           <Workflow>
                             <Nodes>
                               <Expression xsi:type="SubscribeSubject">
@@ -4007,7 +4349,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureName>lm_dots</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -4027,7 +4369,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -4079,7 +4421,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureName>lm_dots</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -4099,7 +4441,7 @@
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
                                       <RotationY>90</RotationY>
-                                      <RotationX>90</RotationX>
+                                      <RotationX>-90</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
                                       <ScaleZ>8</ScaleZ>
@@ -4151,7 +4493,7 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureName>lm_dots</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
@@ -4170,7 +4512,7 @@
                                       <TranslationY>3</TranslationY>
                                       <TranslationZ>0</TranslationZ>
                                       <RotationZ>0</RotationZ>
-                                      <RotationY>-90</RotationY>
+                                      <RotationY>90</RotationY>
                                       <RotationX>0</RotationX>
                                       <ScaleX>10</ScaleX>
                                       <ScaleY>10</ScaleY>
@@ -4223,7 +4565,323 @@
                                       <Combinator xsi:type="gl:BindTexture">
                                         <gl:TextureSlot>Texture0</gl:TextureSlot>
                                         <gl:ShaderName>TexturedModel</gl:ShaderName>
-                                        <gl:TextureName>big_triangle_outline_50contrast</gl:TextureName>
+                                        <gl:TextureName>lm_dots</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>-4.98</TranslationX>
+                                      <TranslationY>3</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>0</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                            </Nodes>
+                            <Edges>
+                              <Edge From="0" To="2" Label="Source1" />
+                              <Edge From="1" To="2" Label="Source2" />
+                              <Edge From="2" To="3" Label="Source1" />
+                              <Edge From="3" To="4" Label="Source1" />
+                              <Edge From="2" To="5" Label="Source1" />
+                              <Edge From="5" To="6" Label="Source1" />
+                              <Edge From="2" To="7" Label="Source1" />
+                              <Edge From="7" To="8" Label="Source1" />
+                              <Edge From="2" To="9" Label="Source1" />
+                              <Edge From="9" To="10" Label="Source1" />
+                            </Edges>
+                          </Workflow>
+                        </Expression>
+                        <Expression xsi:type="GroupWorkflow">
+                          <Name>T6 @ 130 cm (white bar__50contrast)</Name>
+                          <Workflow>
+                            <Nodes>
+                              <Expression xsi:type="SubscribeSubject">
+                                <Name>MousePos</Name>
+                              </Expression>
+                              <Expression xsi:type="ExternalizedMapping">
+                                <Property Name="Expression" />
+                              </Expression>
+                              <Expression xsi:type="scr:ExpressionTransform">
+                                <scr:Expression>it-1130</scr:Expression>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Ceil</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>7.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Floor</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>0</TranslationX>
+                                      <TranslationY>-1.98</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>-90</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Right</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
+                                        <gl:TextureTarget>Texture2D</gl:TextureTarget>
+                                      </Combinator>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TranslationZ" />
+                                      <Property Name="TranslationX" />
+                                      <Property Name="TranslationY" />
+                                      <Property Name="RotationZ" />
+                                      <Property Name="RotationY" />
+                                      <Property Name="RotationX" />
+                                      <Property Name="ScaleX" />
+                                      <Property Name="ScaleY" />
+                                    </Expression>
+                                    <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
+                                      <TranslationX>4.98</TranslationX>
+                                      <TranslationY>3</TranslationY>
+                                      <TranslationZ>0</TranslationZ>
+                                      <RotationZ>0</RotationZ>
+                                      <RotationY>90</RotationY>
+                                      <RotationX>0</RotationX>
+                                      <ScaleX>10</ScaleX>
+                                      <ScaleY>10</ScaleY>
+                                      <ScaleZ>8</ScaleZ>
+                                      <Ambient>
+                                        <X>0.5</X>
+                                        <Y>0.5</Y>
+                                        <Z>0.5</Z>
+                                      </Ambient>
+                                      <Diffuse>
+                                        <X>0</X>
+                                        <Y>0</Y>
+                                        <Z>0</Z>
+                                      </Diffuse>
+                                      <Specular>
+                                        <X>1</X>
+                                        <Y>1</Y>
+                                        <Z>1</Z>
+                                      </Specular>
+                                      <SpecularExponent>10</SpecularExponent>
+                                      <MeshName>Plane</MeshName>
+                                    </Expression>
+                                    <Expression xsi:type="WorkflowOutput" />
+                                  </Nodes>
+                                  <Edges>
+                                    <Edge From="0" To="2" Label="Source1" />
+                                    <Edge From="1" To="2" Label="Source2" />
+                                    <Edge From="2" To="4" Label="Source1" />
+                                    <Edge From="3" To="4" Label="Source2" />
+                                    <Edge From="4" To="5" Label="Source1" />
+                                  </Edges>
+                                </Workflow>
+                              </Expression>
+                              <Expression xsi:type="PropertyMapping">
+                                <PropertyMappings>
+                                  <Property Name="TranslationZ" />
+                                </PropertyMappings>
+                              </Expression>
+                              <Expression xsi:type="GroupWorkflow">
+                                <Name>Left</Name>
+                                <Workflow>
+                                  <Nodes>
+                                    <Expression xsi:type="SubscribeSubject">
+                                      <Name>Draw3DStim</Name>
+                                    </Expression>
+                                    <Expression xsi:type="ExternalizedMapping">
+                                      <Property Name="TextureName" />
+                                    </Expression>
+                                    <Expression xsi:type="Combinator">
+                                      <Combinator xsi:type="gl:BindTexture">
+                                        <gl:TextureSlot>Texture0</gl:TextureSlot>
+                                        <gl:ShaderName>TexturedModel</gl:ShaderName>
+                                        <gl:TextureName>white bar__50contrast</gl:TextureName>
                                         <gl:TextureTarget>Texture2D</gl:TextureTarget>
                                       </Combinator>
                                     </Expression>
