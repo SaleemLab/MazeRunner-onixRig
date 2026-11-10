@@ -1,0 +1,34 @@
+# Made in track_viewer.html on 2026-11-10 00:14 from designs/onix_12_landmarks.yaml.
+# Save it in vr_simulation/designs/, then: python explore.py designs/onix_two_tracks_B.yaml  /  python export_bonsai.py designs/onix_two_tracks_B.yaml
+name: onix_two_tracks_B
+far_clip_cm: 20
+dome_mask: false
+corridor: {width_cm: 10, height_cm: 10, eye_height_cm: 2, landmark_length_cm: 10}
+texture_folders: ["textures/landmarks12", "textures/onix"]
+bonsai: {"wheel_gain":3,"trials":[1,2]}
+
+tracks:
+  - id: 1
+    name: "Track 1"
+    start_cm: 0
+    length_cm: 140
+    walls: {ceiling: smoothed_fwn2, floor: smoothed_fwn4, right: smoothed_fwn1, left: smoothed_fwn3}
+    landmarks:
+      - {at: 30, texture: lm_radial, label: T1}
+      - {at: 50, texture: lm_spots, label: T2}
+      - {at: 70, texture: lm_diag45, label: T3}
+      - {at: 90, texture: lm_crosses, label: T4}
+      - {at: 110, texture: lm_rings, label: T5}
+      - {at: 130, texture: black cross__50contrast, label: T6}
+  - id: 2
+    name: "Track 2"
+    start_cm: 1000
+    length_cm: 140
+    walls: {ceiling: smoothed_fwn2, floor: smoothed_fwn4, right: smoothed_fwn1, left: smoothed_fwn3}
+    landmarks:
+      - {at: 30, texture: lm_vbars, label: T1}
+      - {at: 50, texture: lm_bricks, label: T2}
+      - {at: 70, texture: lm_diamond, label: T3}
+      - {at: 90, texture: white cross__50contrast, label: T4}
+      - {at: 110, texture: black bar__50contrast, label: T5}
+      - {at: 130, texture: 45Grat_12_50contrast, label: T6}

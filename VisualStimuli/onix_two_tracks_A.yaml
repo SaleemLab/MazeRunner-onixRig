@@ -1,0 +1,31 @@
+# Made in track_viewer.html on 2026-11-10 01:24 from designs/onix_two_tracks_A.yaml.
+# Save it in vr_simulation/designs/, then: python explore.py designs/onix_two_tracks_A.yaml  /  python export_bonsai.py designs/onix_two_tracks_A.yaml
+name: onix_two_tracks_A
+far_clip_cm: 20
+dome_mask: false
+corridor: {width_cm: 10, height_cm: 10, eye_height_cm: 2, landmark_length_cm: 10}
+texture_folders: ["textures/onix"]
+
+tracks:
+  - id: 1
+    name: "Track 1A"
+    start_cm: 0
+    length_cm: 140
+    walls: {ceiling: smoothed_fwn2, floor: smoothed_fwn4, right: smoothed_fwn1, left: smoothed_fwn3}
+    landmarks:
+      - {at: 30, texture: 2x2_checkerboard_50contrast, label: T1}
+      - {at: 50, texture: Circle_horBar_white_50contrast, label: T2, pose: {floor: {rotation_deg: [90, 90, 0]}, left: {rotation_deg: [0, -90, 0]}}, panel_order: [floor, right, ceiling, left]}
+      - {at: 70, texture: white bar__50contrast, label: T3, panel_order: [floor, right, ceiling, left]}
+      - {at: 90, texture: big_triangle_50contrast, label: T4, pose: {ceiling: {lit: false}, left: {lit: false, rotation_deg: [0, -90, 0]}}, panel_order: [floor, right, ceiling, left]}
+      - {at: 110, texture: brick_white_6_rows_clean_50contrast, label: T5, pose: {ceiling: {lit: false}, left: {lit: false}}, panel_order: [floor, right, ceiling, left]}
+  - id: 2
+    name: "Track 2A"
+    start_cm: 1000
+    length_cm: 140
+    walls: {ceiling: smoothed_fwn2, floor: smoothed_fwn4, right: smoothed_fwn1, left: smoothed_fwn3}
+    landmarks:
+      - {at: 30, texture: big_triangle_outline_white_50contrast, label: T1, pose: {ceiling: {rotation_deg: [90, 90, 0]}, floor: {rotation_deg: [90, 90, 0]}, right: {rotation_deg: [0, -90, 0]}}}
+      - {at: 50, texture: 45Grat_1_50contrast, label: T2, pose: {ceiling: {rotation_deg: [90, 90, 0]}, floor: {rotation_deg: [90, 90, 0]}, right: {rotation_deg: [0, -90, 0]}}}
+      - {at: 70, texture: Circle_horBar_50contrast, label: T3, pose: {ceiling: {rotation_deg: [90, 90, 0]}, floor: {rotation_deg: [90, 90, 0]}, right: {rotation_deg: [0, -90, 0]}}}
+      - {at: 90, texture: VertGrat_6_50contrast, label: T4, pose: {ceiling: {rotation_deg: [90, 90, 0]}, floor: {rotation_deg: [90, 90, 0]}, right: {rotation_deg: [0, -90, 0]}}}
+      - {at: 110, texture: big_triangle_outline_50contrast, label: T5, pose: {ceiling: {rotation_deg: [90, 90, 0]}, floor: {rotation_deg: [90, 90, 0]}, right: {rotation_deg: [0, -90, 0]}}}
