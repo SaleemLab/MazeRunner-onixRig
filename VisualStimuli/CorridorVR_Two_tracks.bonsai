@@ -1751,7 +1751,7 @@ double.Parse(it[7]) as item8
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Timer">
-                <rx:DueTime>PT4.5747336S</rx:DueTime>
+                <rx:DueTime>PT5.1125283S</rx:DueTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="SubscribeSubject">
@@ -2054,7 +2054,7 @@ double.Parse(it[7]) as item8
                   </Expression>
                   <Expression xsi:type="Multiply">
                     <Operand xsi:type="DoubleProperty">
-                      <Value>0.01457</Value>
+                      <Value>0.02</Value>
                     </Operand>
                   </Expression>
                   <Expression xsi:type="rx:Accumulate" />
@@ -2087,7 +2087,7 @@ double.Parse(it[7]) as item8
                   </Expression>
                   <Expression xsi:type="Add">
                     <Operand xsi:type="DoubleProperty">
-                      <Value>0</Value>
+                      <Value>1000</Value>
                     </Operand>
                   </Expression>
                   <Expression xsi:type="rx:BehaviorSubject">
@@ -2143,7 +2143,7 @@ double.Parse(it[7]) as item8
                   </Expression>
                   <Expression xsi:type="GreaterThanOrEqual">
                     <Operand xsi:type="DoubleProperty">
-                      <Value>140</Value>
+                      <Value>1140</Value>
                     </Operand>
                   </Expression>
                   <Expression xsi:type="rx:Condition">
@@ -31327,7 +31327,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>8</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -31399,7 +31399,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-2</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -31471,7 +31471,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>5</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -31543,7 +31543,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-5</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -31643,7 +31643,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-29.7086</TranslationZ>
+                                            <TranslationZ>1110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -31715,7 +31715,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-29.7086</TranslationZ>
+                                            <TranslationZ>1110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -31787,7 +31787,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-29.7086</TranslationZ>
+                                            <TranslationZ>1110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -31859,7 +31859,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-29.7086</TranslationZ>
+                                            <TranslationZ>1110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -31959,7 +31959,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-49.7086</TranslationZ>
+                                            <TranslationZ>1090.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32031,7 +32031,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-49.7086</TranslationZ>
+                                            <TranslationZ>1090.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32103,7 +32103,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-49.7086</TranslationZ>
+                                            <TranslationZ>1090.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32175,7 +32175,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-49.7086</TranslationZ>
+                                            <TranslationZ>1090.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32275,7 +32275,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32347,7 +32347,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32419,7 +32419,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32491,7 +32491,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-69.7086</TranslationZ>
+                                            <TranslationZ>1070.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32591,7 +32591,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-89.7086</TranslationZ>
+                                            <TranslationZ>1050.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32663,7 +32663,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-89.7086</TranslationZ>
+                                            <TranslationZ>1050.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32735,7 +32735,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-89.7086</TranslationZ>
+                                            <TranslationZ>1050.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32807,7 +32807,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-89.7086</TranslationZ>
+                                            <TranslationZ>1050.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -32907,7 +32907,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-109.7086</TranslationZ>
+                                            <TranslationZ>1030.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -32979,7 +32979,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-109.7086</TranslationZ>
+                                            <TranslationZ>1030.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33051,7 +33051,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-109.7086</TranslationZ>
+                                            <TranslationZ>1030.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33123,7 +33123,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-109.7086</TranslationZ>
+                                            <TranslationZ>1030.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33223,7 +33223,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-129.7086</TranslationZ>
+                                            <TranslationZ>1010.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33295,7 +33295,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-129.7086</TranslationZ>
+                                            <TranslationZ>1010.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33367,7 +33367,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-129.7086</TranslationZ>
+                                            <TranslationZ>1010.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33439,7 +33439,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-129.7086</TranslationZ>
+                                            <TranslationZ>1010.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33525,8 +33525,10 @@ double.Parse(it[7]) as item8
                             </Edges>
                           </Workflow>
                         </Expression>
-                        <Expression xsi:type="Combinator">
-                          <Combinator xsi:type="rx:SubscribeWhen" />
+                        <Expression xsi:type="Disable">
+                          <Builder xsi:type="Combinator">
+                            <Combinator xsi:type="rx:SubscribeWhen" />
+                          </Builder>
                         </Expression>
                         <Expression xsi:type="GroupWorkflow">
                           <Name>Track A2 (onix_two_tracks_A)</Name>
@@ -33581,7 +33583,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>8</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33653,7 +33655,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-2</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33725,7 +33727,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>5</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33797,7 +33799,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-5</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -33897,7 +33899,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>57.34715</TranslationZ>
+                                            <TranslationZ>110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -33969,7 +33971,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>57.34715</TranslationZ>
+                                            <TranslationZ>110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34041,7 +34043,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>57.34715</TranslationZ>
+                                            <TranslationZ>110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34113,7 +34115,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>57.34715</TranslationZ>
+                                            <TranslationZ>110.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34213,7 +34215,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>37.34715</TranslationZ>
+                                            <TranslationZ>90.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34285,7 +34287,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>37.34715</TranslationZ>
+                                            <TranslationZ>90.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34357,7 +34359,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>37.34715</TranslationZ>
+                                            <TranslationZ>90.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34429,7 +34431,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>37.34715</TranslationZ>
+                                            <TranslationZ>90.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34529,7 +34531,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34601,7 +34603,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>0</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34673,7 +34675,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34745,7 +34747,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>17.34715</TranslationZ>
+                                            <TranslationZ>70.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -34845,7 +34847,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-2.65285</TranslationZ>
+                                            <TranslationZ>50.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34917,7 +34919,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-2.65285</TranslationZ>
+                                            <TranslationZ>50.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -34989,7 +34991,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-2.65285</TranslationZ>
+                                            <TranslationZ>50.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35061,7 +35063,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-2.65285</TranslationZ>
+                                            <TranslationZ>50.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35161,7 +35163,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-22.65285</TranslationZ>
+                                            <TranslationZ>30.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -35233,7 +35235,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-22.65285</TranslationZ>
+                                            <TranslationZ>30.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -35305,7 +35307,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-22.65285</TranslationZ>
+                                            <TranslationZ>30.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35377,7 +35379,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-22.65285</TranslationZ>
+                                            <TranslationZ>30.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35477,7 +35479,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>7.98</TranslationY>
-                                            <TranslationZ>-42.65285</TranslationZ>
+                                            <TranslationZ>10.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -35549,7 +35551,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>0</TranslationX>
                                             <TranslationY>-1.98</TranslationY>
-                                            <TranslationZ>-42.65285</TranslationZ>
+                                            <TranslationZ>10.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>-90</RotationX>
@@ -35621,7 +35623,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-42.65285</TranslationZ>
+                                            <TranslationZ>10.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35693,7 +35695,7 @@ double.Parse(it[7]) as item8
                                           <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawTexturedModel.bonsai">
                                             <TranslationX>-4.98</TranslationX>
                                             <TranslationY>3</TranslationY>
-                                            <TranslationZ>-42.65285</TranslationZ>
+                                            <TranslationZ>10.02</TranslationZ>
                                             <RotationZ>0</RotationZ>
                                             <RotationY>90</RotationY>
                                             <RotationX>0</RotationX>
@@ -35779,8 +35781,10 @@ double.Parse(it[7]) as item8
                             </Edges>
                           </Workflow>
                         </Expression>
-                        <Expression xsi:type="Combinator">
-                          <Combinator xsi:type="rx:SubscribeWhen" />
+                        <Expression xsi:type="Disable">
+                          <Builder xsi:type="Combinator">
+                            <Combinator xsi:type="rx:SubscribeWhen" />
+                          </Builder>
                         </Expression>
                         <Expression xsi:type="Disable">
                           <Builder xsi:type="GroupWorkflow">
@@ -180929,7 +180933,7 @@ double.Parse(it[7]) as item8
                     <Name>PDLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_1_1_CorridorVR_UniqueA\M26033_20261110_1_1_CorridorVR_UniqueA_PDLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261111\M26033_20261111_1_0_CorridorVR_UniqueA\M26033_20261111_1_0_CorridorVR_UniqueA_PDLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -181014,7 +181018,7 @@ double.Parse(it[7]) as item8
                     <Name>PeripheralLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_1_1_CorridorVR_UniqueA\M26033_20261110_1_1_CorridorVR_UniqueA_PeripheralLog.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261111\M26033_20261111_1_0_CorridorVR_UniqueA\M26033_20261111_1_0_CorridorVR_UniqueA_PeripheralLog.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -181274,7 +181278,7 @@ double.Parse(it[7]) as item8
                     <Name>TrialInfo</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_1_1_CorridorVR_UniqueA\M26033_20261110_1_1_CorridorVR_UniqueA_Trial.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261111\M26033_20261111_1_0_CorridorVR_UniqueA\M26033_20261111_1_0_CorridorVR_UniqueA_Trial.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>true</io:Overwrite>
@@ -181478,7 +181482,7 @@ double.Parse(it[7]) as item8
                     <Name>VideoLog</Name>
                   </Expression>
                   <Expression xsi:type="io:CsvWriter">
-                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_1_1_CorridorVR_UniqueA\M26033_20261110_1_1_CorridorVR_UniqueA_Video.csv</io:FileName>
+                    <io:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261111\M26033_20261111_1_0_CorridorVR_UniqueA\M26033_20261111_1_0_CorridorVR_UniqueA_Video.csv</io:FileName>
                     <io:Delimiter>,</io:Delimiter>
                     <io:Append>false</io:Append>
                     <io:Overwrite>false</io:Overwrite>
@@ -181587,7 +181591,7 @@ double.Parse(it[7]) as item8
                   </Expression>
                   <Expression xsi:type="Combinator">
                     <Combinator xsi:type="cv:VideoWriter">
-                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261110\M26033_20261110_1_1_CorridorVR_UniqueA\M26033_20261110_1_1_CorridorVR_UniqueA_Video.avi</cv:FileName>
+                      <cv:FileName>C:\Users\Bendor Lab\Documents\data\Data\M26033\20261111\M26033_20261111_1_0_CorridorVR_UniqueA\M26033_20261111_1_0_CorridorVR_UniqueA_Video.avi</cv:FileName>
                       <cv:Suffix>Timestamp</cv:Suffix>
                       <cv:Buffered>true</cv:Buffered>
                       <cv:Overwrite>false</cv:Overwrite>
@@ -182973,7 +182977,7 @@ def process(value):
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Timer">
-                <rx:DueTime>PT0.0340902S</rx:DueTime>
+                <rx:DueTime>PT0.0386784S</rx:DueTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Unit" />
@@ -183019,7 +183023,7 @@ def process(value):
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Timer">
-                <rx:DueTime>PT0.0301195S</rx:DueTime>
+                <rx:DueTime>PT0.0318721S</rx:DueTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Unit" />
@@ -183095,7 +183099,7 @@ def process(value):
             <Expression xsi:type="IncludeWorkflow" Path="BonVision:Primitives.DrawQuad.bonsai">
               <ExtentX>0.2</ExtentX>
               <ExtentY>0.2</ExtentY>
-              <LocationX>0.88</LocationX>
+              <LocationX>0.84</LocationX>
               <LocationY>-0.83</LocationY>
               <Layer>1</Layer>
               <Angle>0</Angle>
@@ -183229,7 +183233,7 @@ def process(value):
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>1_1</Value>
+                <Value>1_0</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">

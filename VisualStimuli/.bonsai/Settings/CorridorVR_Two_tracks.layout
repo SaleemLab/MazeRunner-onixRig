@@ -13,8 +13,8 @@
     <VisualizerSettings>
       <TimeSeriesVisualizer>
         <Capacity>640</Capacity>
-        <Min>0.01666</Min>
-        <Max>0.01675</Max>
+        <Min>0.016</Min>
+        <Max>0.026000000000000002</Max>
         <AutoScale>true</AutoScale>
       </TimeSeriesVisualizer>
     </VisualizerSettings>
@@ -89,8 +89,8 @@
           </WindowSettings>
           <WindowSettings Index="23">
             <Location>
-              <X>1498</X>
-              <Y>73</Y>
+              <X>1470</X>
+              <Y>91</Y>
             </Location>
             <Size>
               <Width>416</Width>
@@ -100,8 +100,8 @@
             <VisualizerSettings>
               <TimeSeriesVisualizer>
                 <Capacity>640</Capacity>
-                <Min>0.275</Min>
-                <Max>0.31000000000000005</Max>
+                <Min>1137</Min>
+                <Max>1140.5</Max>
                 <AutoScale>true</AutoScale>
               </TimeSeriesVisualizer>
             </VisualizerSettings>
@@ -191,12 +191,12 @@
           </WindowSettings>
           <WindowSettings Index="29">
             <Location>
-              <X>518</X>
-              <Y>544</Y>
+              <X>524</X>
+              <Y>326</Y>
             </Location>
             <Size>
-              <Width>608</Width>
-              <Height>643</Height>
+              <Width>546</Width>
+              <Height>569</Height>
             </Size>
             <VisualizerTypeName>Bonsai.Vision.Design.IplImageVisualizer</VisualizerTypeName>
             <VisualizerSettings>
@@ -283,8 +283,8 @@
         <VisualizerSettings>
           <TimeSeriesVisualizer>
             <Capacity>640</Capacity>
-            <Min>225000</Min>
-            <Max>255000</Max>
+            <Min>261000</Min>
+            <Max>261250</Max>
             <AutoScale>true</AutoScale>
           </TimeSeriesVisualizer>
         </VisualizerSettings>
